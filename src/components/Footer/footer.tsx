@@ -1,7 +1,7 @@
 import React from "react";
 
-const footer = () => {
-  return <div>footer</div>;
+const footer = (): JSX.Element => {
+  return <div className="navbar">navbar</div>;
 };
 
 export default footer;

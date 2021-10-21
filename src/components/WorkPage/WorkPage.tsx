@@ -1,7 +1,12 @@
 import React from "react";
+import { Wrapper } from "../LandingPage/LandingPage";
 
 const WorkPage = (): JSX.Element => {
-  return <div>workPage</div>;
+  return (
+    <Wrapper>
+      <div>Work</div>
+    </Wrapper>
+  );
 };
 
 export default WorkPage;

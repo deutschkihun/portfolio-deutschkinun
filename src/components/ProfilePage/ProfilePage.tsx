@@ -1,7 +1,11 @@
 import React from "react";
-
+import { Wrapper } from "../LandingPage/LandingPage";
 const ProfilePage = (): JSX.Element => {
-  return <div>ProfilePage</div>;
+  return (
+    <Wrapper>
+      <div>Profile</div>
+    </Wrapper>
+  );
 };
 
 export default ProfilePage;

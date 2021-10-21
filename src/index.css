@@ -129,6 +129,21 @@ ul {
 a {
   text-decoration: none;
 }
+
+/*************
+  meun-container 
+*************/
+
+menulist {
+  text-align: right;
+}
+
+menulist .li {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+
 /*************
      Buttons 
 *************/
