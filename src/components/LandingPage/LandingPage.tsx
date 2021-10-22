@@ -23,12 +23,7 @@ const LandingPage = (): JSX.Element => {
               submit
             </button>
           </div>
-          <div className="form-alert"></div>
         </form>
-        <section className="tasks-container">
-          <p className="loading-text">Loading...</p>
-          <div className="tasks"></div>
-        </section>
       </Wrapper>
     </>
   );
