@@ -10,8 +10,8 @@ const LandingPage = (): JSX.Element => {
   return (
     <>
       <Wrapper>
-        <form className="task-form">
-          <h4>task manager</h4>
+        <form className="main-box">
+          <h4 style={{ textAlign: "center" }}>hello</h4>
           <div className="form-control">
             <input
               type="text"
