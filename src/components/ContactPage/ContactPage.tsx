@@ -28,7 +28,11 @@ const ContactPage = (): JSX.Element => {
             required={true}
           />
         </div>
-        <textarea placeholder="Message" required={true}></textarea>
+        <textarea
+          name="message"
+          placeholder="Message"
+          required={true}
+        ></textarea>
         <button type="submit" className="btn submit-btn">
           submit
         </button>

@@ -1,7 +1,14 @@
 import React from "react";
+import { Space } from "../ProfilePage/ProfilePage";
 
-const footer = (): JSX.Element => {
-  return <div className="navbar">navbar</div>;
+const Footer = (): JSX.Element => {
+  return (
+    <div>
+      <Space />
+      <Space />
+      <Space />
+    </div>
+  );
 };
 
-export default footer;
+export default Footer;

@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import WorkPage from "./components/WorkPage/WorkPage";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const App = (): JSX.Element => {
   return (
@@ -18,6 +19,7 @@ const App = (): JSX.Element => {
             <Router exact path="/work" component={WorkPage} />
             <Router exact path="/contact" component={ContactPage} />
           </Switch>
+          <Footer />
         </BrowserRouter>
       </Suspense>
     </>
