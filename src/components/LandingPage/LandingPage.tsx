@@ -19,10 +19,10 @@ const LandingPage = (): JSX.Element => {
               className="task-input"
               placeholder="e.g. wash dishes"
             />
-            <button type="submit" className="btn submit-btn">
-              submit
-            </button>
           </div>
+          <button type="submit" className="btn submit-btn">
+            submit
+          </button>
         </form>
       </Wrapper>
     </>

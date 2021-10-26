@@ -9,7 +9,7 @@ const Header = styled.header`
   z-index: 100;
   left: 0;
   top: 0;
-  font-size: 30px;
+  font-size: 20px;
 `;
 
 const Grid = styled.div`
