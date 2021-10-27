@@ -12,7 +12,7 @@ const Header = styled.header`
   font-size: 20px;
 `;
 
-const Grid = styled.div`
+export const Grid = styled.div`
   max-width: 1440px;
   margin: auto;
   display: grid;
