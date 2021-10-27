@@ -11,8 +11,12 @@ export const Title = styled.h2`
 
 export const Intro = styled.p`
   margin-bottom: 1.5rem;
-  display:flex,
+  display: flex;
   justify-content: space-between;
+`;
+
+export const Download = styled.div`
+  text-align: center;
 `;
 
 export const Space = styled.br``;
@@ -40,7 +44,8 @@ const ProfilePage = (): JSX.Element => {
           tries to find and make up for his shortcomings. He is steadily
           carrying out personal projects outside of the commercial work. About
           10 personal projects are currently released in his GitHub with the
-          source code.
+          source code. In online world, he is working under the nickname
+          &quot;deutschkihun&quot; instead of his real name.
         </Intro>
       </form>
       <form className="main-box">
@@ -138,17 +143,17 @@ const ProfilePage = (): JSX.Element => {
       </form>
       <form className="main-box">
         <Title>Resume</Title>
-        <Intro>
+        <Download>
           <Link
             to="/files/Resume.pdf"
             target="_blank"
             download
-            type="submit"
-            className="btn submit-btn"
+            className="download"
           >
             Download
           </Link>
-        </Intro>
+          <p>updated on 27.10.2021</p>
+        </Download>
       </form>
     </Wrapper>
   );
