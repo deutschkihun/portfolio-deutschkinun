@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Wrapper } from "../LandingPage/LandingPage";
-import profile from "../profile.png";
+//import profile from "../profile.png";
 
 export const Title = styled.h2`
   text-align: center;
@@ -28,12 +28,13 @@ const ProfilePage = (): JSX.Element => {
   return (
     <Wrapper>
       <form className="main-box">
-        <Title className="thumbwrap">
+        {/*<Title className="thumbwrap">
           Kihun Kim
           <span>
             <img src={profile} alt="profile" />
           </span>
-        </Title>
+          </Title>*/}
+        <Title>Kihun Kim</Title>
         <Intro>
           Kihun Kim is a Coding Enthusiast, currently works as a Frontend
           Engineer at PACE Telematices in Karlsruhe, Germany. He is currently
