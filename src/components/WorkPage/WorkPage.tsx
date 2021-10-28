@@ -3,9 +3,10 @@ import styled from "styled-components";
 import { Wrapper } from "../LandingPage/LandingPage";
 import projects from "../project.json";
 import profile from "../profile.png";
+import { Link } from "react-router-dom";
 
 interface Project {
-  id: number;
+  id: string;
   img: string;
   title: string;
 }
@@ -14,40 +15,40 @@ export const OutLine = styled.div`
   max-width: 1440px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 0px;
   padding-left: 5vw;
   padding-right: 5vw;
 `;
 
 export const ProjectContainer = styled.form`
-  max-width: var(--fixed-width);
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 6rem;
-  grid-column: 1;
-
-  h4 {
-    text-align: center;
-  }
 `;
 
 export const Thumbnail = styled.div`
   text-align: center;
+
+  img {
+    padding-bottom: 1rem;
+  }
 `;
 
-const WorkPage = (): JSX.Element => {
+export const WorkPage = (): JSX.Element => {
   return (
     <Wrapper>
-      {projects.map((project: Project, index: number) => {
+      {projects.map((project: Project) => {
+        const { id, img, title } = project;
         return (
-          <OutLine key={project.id}>
+          <OutLine key={id}>
             <ProjectContainer>
               <Thumbnail>
-                <h2 key={index}>{project.title}</h2>
-                <img src={profile} alt={project.title} />
-                <button type="submit" className="btn submit-btn">
+                <h1 key={id}>{title}</h1>
+                <img src={profile} alt={title} />
+                <Link to={`/work/${id}`} className="download">
                   Detail
-                </button>
+                </Link>
               </Thumbnail>
             </ProjectContainer>
           </OutLine>
@@ -56,5 +57,3 @@ const WorkPage = (): JSX.Element => {
     </Wrapper>
   );
 };
-
-export default WorkPage;

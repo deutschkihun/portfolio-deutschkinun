@@ -2,7 +2,7 @@ import React from "react";
 import { Wrapper } from "../LandingPage/LandingPage";
 import { Title } from "../ProfilePage/ProfilePage";
 
-const ContactPage = (): JSX.Element => {
+export const ContactPage = (): JSX.Element => {
   return (
     <Wrapper>
       <form
@@ -56,4 +56,3 @@ const ContactPage = (): JSX.Element => {
     </Wrapper>
   );
 };
-export default ContactPage;

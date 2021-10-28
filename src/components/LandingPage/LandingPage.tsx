@@ -40,31 +40,27 @@ export const Container = styled.div`
   }
 `;
 
-const LandingPage = (): JSX.Element => {
+export const LandingPage = (): JSX.Element => {
   return (
-    <>
-      <Wrapper>
-        <Space />
-        <Container>
-          <div className="container">
-            <div className="info">
-              <h1>Welcome to Kihun&apos;s Portfolio</h1>
-              <p>
-                This portfolio is a web application that shows Kihun&apos;s
-                short introduction, work experiences, programming skills, and
-                projects that he has learned and collected so far. If you want
-                to experience this application, click the button below.
-              </p>
-              <Link to="/profile" className="btn">
-                Get Started
-              </Link>
-            </div>
-            <img src={profile} alt="job hunt" className="img main-img" />
+    <Wrapper>
+      <Space />
+      <Container>
+        <div className="container">
+          <div className="info">
+            <h1>Welcome to Kihun&apos;s Portfolio</h1>
+            <p>
+              This portfolio is a web application that shows Kihun&apos;s short
+              introduction, work experiences, programming skills, and projects
+              that he has learned and collected so far. If you want to
+              experience this application, click the button below.
+            </p>
+            <Link to="/profile" className="btn">
+              Get Started
+            </Link>
           </div>
-        </Container>
-      </Wrapper>
-    </>
+          <img src={profile} alt="job hunt" className="img main-img" />
+        </div>
+      </Container>
+    </Wrapper>
   );
 };
-
-export default LandingPage;

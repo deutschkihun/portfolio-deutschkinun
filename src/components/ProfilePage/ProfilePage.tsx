@@ -24,7 +24,7 @@ export const SubTitle = styled.div`
   font-size: 25px;
 `;
 
-const ProfilePage = (): JSX.Element => {
+export const ProfilePage = (): JSX.Element => {
   return (
     <Wrapper>
       <form className="main-box">
@@ -159,5 +159,3 @@ const ProfilePage = (): JSX.Element => {
     </Wrapper>
   );
 };
-
-export default ProfilePage;
