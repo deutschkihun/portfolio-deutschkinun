@@ -27,12 +27,6 @@ const WorkPage = lazy(() =>
   }))
 );
 
-const DetailPage = lazy(() =>
-  import("./components/DetailPage/DetailPage").then(({ DetailPage }) => ({
-    default: DetailPage,
-  }))
-);
-
 const App = (): JSX.Element => {
   return (
     <>
@@ -44,7 +38,6 @@ const App = (): JSX.Element => {
             <Router exact path="/profile" component={ProfilePage} />
             <Router exact path="/work" component={WorkPage} />
             <Router exact path="/contact" component={ContactPage} />
-            <Router exact path="/work/:id" component={DetailPage} />
           </Switch>
           <Footer />
         </BrowserRouter>

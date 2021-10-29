@@ -1,7 +1,7 @@
 import React from "react";
 import "../../index.css";
 import styled from "styled-components";
-import profile from "../profile.png";
+import profile from "../assets/profile.png";
 import { Link } from "react-router-dom";
 import { Space } from "../ProfilePage/ProfilePage";
 
