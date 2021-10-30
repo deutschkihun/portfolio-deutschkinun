@@ -1,3 +1,4 @@
+import moment from "moment";
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -151,14 +152,23 @@ export const ProfilePage = (): JSX.Element => {
         <Title>Resume</Title>
         <Download>
           <Link
-            to="/files/Resume.pdf"
+            to="/files/Resume_DE.pdf"
             target="_blank"
             download
             className="download"
           >
-            Download
+            Download (DE)
           </Link>
-          <p>updated on 27.10.2021</p>
+          <Space />
+          <Link
+            to="/files/Resume_EN.pdf"
+            target="_blank"
+            download
+            className="download"
+          >
+            Download (EN)
+          </Link>
+          <p>updated on {moment().format("MMMM Do YYYY, h:mm:ss a")}</p>
         </Download>
       </form>
     </Wrapper>
