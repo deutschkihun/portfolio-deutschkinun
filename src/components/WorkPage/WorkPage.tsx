@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { Wrapper } from "../LandingPage/LandingPage";
 import { projects } from "../assets/projects";
 import { Link } from "react-router-dom";
+import { Space } from "../ProfilePage/ProfilePage";
 
 interface Project {
   id: string;
-  img: string;
+  img?: string;
   title: string;
   link?: string;
   paper?: string;
@@ -54,15 +55,23 @@ export const WorkPage = (): JSX.Element => {
           paper,
         } = project;
         const img = new Image();
-        img.src = screenshot;
+        if (screenshot) {
+          img.src = screenshot;
+          img.onload = function () {
+            const canvas = document.getElementById(id) as HTMLCanvasElement;
+            const ctx = canvas && canvas.getContext("2d");
+            if (id === "4") {
+              canvas.width = 500;
+              canvas.height = 300;
+              ctx && ctx.drawImage(img, 0, 0, 500, 300);
+            } else {
+              canvas.width = 700;
+              canvas.height = 300;
+              ctx && ctx.drawImage(img, 0, 0, 700, 300);
+            }
+          };
+        }
 
-        img.onload = function () {
-          const canvas = document.getElementById(id) as HTMLCanvasElement;
-          const ctx = canvas && canvas.getContext("2d");
-          canvas.width = 700;
-          canvas.height = 300;
-          ctx && ctx.drawImage(img, 0, 0, 700, 300);
-        };
         return (
           <OutLine key={id}>
             <ProjectContainer>
@@ -80,6 +89,7 @@ export const WorkPage = (): JSX.Element => {
                     Get more
                   </a>
                 )}
+                {link && paper && <Space />}
                 {paper && (
                   <Link
                     to={paper}

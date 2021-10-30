@@ -212,6 +212,10 @@ form > .icon {
   padding-top: 1rem;
 }
 
+form > a {
+  text-align: center;
+}
+
 .icon > a {
   padding-left: 1rem;
   padding-right: 1rem;

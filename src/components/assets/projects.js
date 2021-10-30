@@ -1,15 +1,22 @@
 import img1 from "./img1.png";
 import img2 from "./img2.png";
+import img3 from "./img3.png";
+import img4 from "./img4.png";
 import img5 from "./img5.png";
 import img6 from "./img6.png";
+import img7 from "./img7.png";
+import img8 from "./img8.png";
+import img9 from "./img9.png";
+import img10 from "./img10.png";
+import img11 from "./img11.png";
 
 export const projects = [
   {
     id: "1",
     title: "Portfolio Application Ver.2",
-    description: "Current portfolio application",
+    description: "Current portfolio application (www.deutschkihun.com)",
     img: img1,
-    link: "https://deutschkihun.com",
+    link: "https://github.com/deutschkihun/Portfolio-Ver.2",
   },
   {
     id: "2",
@@ -17,12 +24,12 @@ export const projects = [
     description:
       "Previous portfolio application, not active anymore. But source code is open",
     img: img2,
-    link: "https://kihunportfolio.netlify.app/",
+    link: "https://github.com/deutschkihun/Portfolio-Ver.1",
   },
   {
     id: "3",
     title: "Login Boilerplate",
-    img: img1,
+    img: img3,
     description:
       "All-in-on Login system including sign-in, sign-up, change registered data, Google / Linkedin login ",
     link: "https://github.com/deutschkihun/Login-Boilerplate",
@@ -30,7 +37,7 @@ export const projects = [
   {
     id: "4",
     title: "User Preference Service",
-    img: img1,
+    img: img4,
     description:
       "Bachelor thesis: building user preference application for individual mobility users ",
     link: "https://github.com/deutschkihun/User-Preference-Service",
@@ -56,36 +63,36 @@ export const projects = [
     id: "7",
     title: "Custom Open Source API",
     description:
-      "Custom API: Sorting, searching, finding, querying 500 random user JSON data",
-    img: img1,
-    link: "",
+      "Custom REST API: Sorting, searching, finding, querying 500 random user JSON data",
+    img: img7,
+    link: "https://github.com/deutschkihun/Custom-OpenSourceAPI",
   },
   {
     id: "8",
     title: "Must Know React",
     description: "React that beginner must know",
-    img: img1,
+    img: img8,
     link: "https://github.com/deutschkihun/Must-Know-React-With-TypeScript",
   },
   {
     id: "9",
     title: "Must Know JavaScript",
     description: "JavaScript that beginner must know",
-    img: img1,
+    img: img9,
     link: "https://github.com/deutschkihun/Must-Know-JavaScript",
   },
   {
     id: "10",
     title: "Must Know TypeScript",
     description: "TypeScript that beginner must know",
-    img: img1,
+    img: img10,
     link: "https://github.com/deutschkihun/Must-Know-TypeScript",
   },
   {
     id: "11",
     title: "Must Know TDD (Test Driven Development)",
     description: "TDD that beginner must know",
-    img: img1,
+    img: img11,
     link: "https://github.com/deutschkihun/Must-Know-TDD",
   },
 ];

@@ -57,6 +57,8 @@ export const ProfilePage = (): JSX.Element => {
               July 2021 – Present / Karlsruhe, Germany
               <Space /> PACE Telematics (Frontend Development Team) / Junior
               Frontend Engineer / Full-time
+              <Space /> All-in-one Europe&apos;s leading mobile fueling
+              application development (PACE Drive, Connected Fueling)
             </li>
             <Space />
             <li>
@@ -64,18 +66,21 @@ export const ProfilePage = (): JSX.Element => {
               <Space />
               Vayu Software (Core Development Team) / Junior Fullstack Engineer
               / Internship
+              <Space /> Low-Code platform development
             </li>
             <Space />
             <li>
               Nov. 2020 – Mar. 2021 / Karlsruhe, Germany
               <Space /> dmTECH (Receipt Datamanagement Team) / Data Warehouse
               Manager / Part-time
+              <Space /> Receipt data management in data warehouse
             </li>
             <br />
             <li>
               Sept. 2020 – Oct. 2020 / Karlsruhe, Germany
               <Space /> MINT-Kolleg (Educational institute in KIT) / Mathe Tutor
               / Part-time
+              <Space /> Math teaching, exercise preparation
             </li>
           </ul>
         </Intro>

@@ -27,6 +27,12 @@ const WorkPage = lazy(() =>
   }))
 );
 
+const ErrorPage = lazy(() =>
+  import("./components/ErrorPage/ErrorPage").then(({ ErrorPage }) => ({
+    default: ErrorPage,
+  }))
+);
+
 const App = (): JSX.Element => {
   return (
     <>
@@ -38,6 +44,7 @@ const App = (): JSX.Element => {
             <Router exact path="/profile" component={ProfilePage} />
             <Router exact path="/work" component={WorkPage} />
             <Router exact path="/contact" component={ContactPage} />
+            <Router path="*" component={ErrorPage} />
           </Switch>
           <Footer />
         </BrowserRouter>
