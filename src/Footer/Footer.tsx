@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Space } from "../ProfilePage/ProfilePage";
+import { Space } from "../components/ProfilePage/ProfilePage";
 
 export const Copyright = styled.p`
   text-align: center;

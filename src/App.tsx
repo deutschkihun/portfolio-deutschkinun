@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Switch, Route as Router, BrowserRouter } from "react-router-dom";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Footer } from "./components/Footer/Footer";
+import { Navbar } from "./Navbar/Navbar";
+import { Footer } from "./Footer/Footer";
 
 const LandingPage = lazy(() =>
   import("./components/LandingPage/LandingPage").then(({ LandingPage }) => ({
