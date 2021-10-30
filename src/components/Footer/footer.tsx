@@ -7,7 +7,7 @@ export const Copyright = styled.p`
   margin-bottom: 1rem;
 `;
 
-const Footer = (): JSX.Element => {
+export const Footer = (): JSX.Element => {
   return (
     <div>
       <Space />
@@ -20,5 +20,3 @@ const Footer = (): JSX.Element => {
     </div>
   );
 };
-
-export default Footer;

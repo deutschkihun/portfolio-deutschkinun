@@ -37,7 +37,7 @@ const Listing = styled.li`
   margin-right: 40px;
 `;
 
-const Navbar = (): JSX.Element => {
+export const Navbar = (): JSX.Element => {
   return (
     <Header>
       <Grid>
@@ -63,5 +63,3 @@ const Navbar = (): JSX.Element => {
     </Header>
   );
 };
-
-export default Navbar;
