@@ -36,7 +36,7 @@ const ErrorPage = lazy(() =>
 const App = (): JSX.Element => {
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading....</div>}>
         <BrowserRouter>
           <Navbar />
           <Switch>
