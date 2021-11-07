@@ -9,6 +9,8 @@ import img8 from "./img8.png";
 import img9 from "./img9.png";
 import img10 from "./img10.png";
 import img11 from "./img11.png";
+import img12 from "./img12.png";
+import img13 from "./img13.png";
 
 export const projects = [
   {
@@ -94,5 +96,19 @@ export const projects = [
     description: "TDD that beginner must know",
     img: img11,
     link: "https://github.com/deutschkihun/Must-Know-TDD",
+  },
+  {
+    id: "12",
+    title: "Product API",
+    description: "Custom product REST API with swagger UI documentation",
+    img: img12,
+    link: "https://productapi-deutschkihun.herokuapp.com/docs/",
+  },
+  {
+    id: "13",
+    title: "Query API",
+    description: "Custom query REST API by sorting querying and filtering",
+    img: img13,
+    link: "https://queryapi-deutschkihun.herokuapp.com/",
   },
 ];
