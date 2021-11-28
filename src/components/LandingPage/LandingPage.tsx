@@ -31,11 +31,11 @@ export const Container = styled.div`
     }
 
     .info {
-      grid-column: 2 / span 6;
+      grid-column: 2 / 6;
     }
     .main-img {
       display: block;
-      grid-column: 8 / span 10;
+      grid-column: 8 / 10;
     }
   }
 `;

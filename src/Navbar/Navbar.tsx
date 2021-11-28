@@ -24,11 +24,11 @@ export const Grid = styled.div`
 
 const MenuLogo = styled.a`
   cursor: pointer;
-  grid-column: 1 / span 4;
+  grid-column: 1 / 4;
 `;
 
 const MenuContainer = styled.div`
-  grid-column: 6 / span 7;
+  grid-column: 6 / 11;
 `;
 
 const Listing = styled.li`
