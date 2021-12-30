@@ -1,3 +1,3 @@
-# Portfolio-Ver.2
+# Portfolio Web App
 
-> Current online portfolio application [here](http://deutschkihun.com)
+> http://deutschkihun.com
