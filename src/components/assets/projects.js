@@ -15,21 +15,13 @@ import img13 from "./img13.png";
 export const projects = [
   {
     id: "1",
-    title: "Portfolio Application Ver.2",
+    title: "Kihun's portfolio web application",
     description: "Current portfolio application (www.deutschkihun.com)",
     img: img1,
-    link: "https://github.com/deutschkihun/Portfolio-Ver.2",
+    link: "https://github.com/deutschkihun/Portfolio-WebApp",
   },
   {
     id: "2",
-    title: "Portfolio Application Ver.1",
-    description:
-      "Previous portfolio application, not active anymore. But source code is open",
-    img: img2,
-    link: "https://github.com/deutschkihun/Portfolio-Ver.1",
-  },
-  {
-    id: "3",
     title: "Login Boilerplate",
     img: img3,
     description:
@@ -37,7 +29,7 @@ export const projects = [
     link: "https://github.com/deutschkihun/Login-Boilerplate",
   },
   {
-    id: "4",
+    id: "3",
     title: "User Preference Service",
     img: img4,
     description:
@@ -46,7 +38,7 @@ export const projects = [
     paper: "/files/Bachelorarbeit_KihunKim.pdf",
   },
   {
-    id: "5",
+    id: "4",
     title: "Digit recognition on blast furnace",
     description:
       "Seminar project: recognizing digit on blast furnace by AI automatically",
@@ -54,7 +46,7 @@ export const projects = [
     paper: "/files/Seminar_Digitalisierung_in_der_Stahlindustrie.pdf",
   },
   {
-    id: "6",
+    id: "5",
     title: "Online Sport DB Application",
     description:
       "Getting real-time updated sports teams and players information around the world ",
@@ -62,7 +54,7 @@ export const projects = [
     link: "https://sportdbapplication.netlify.app/",
   },
   {
-    id: "7",
+    id: "6",
     title: "Custom Open Source API",
     description:
       "Custom REST API: Sorting, searching, finding, querying 500 random user JSON data",
@@ -70,42 +62,42 @@ export const projects = [
     link: "https://github.com/deutschkihun/Custom-OpenSourceAPI",
   },
   {
-    id: "8",
+    id: "7",
     title: "Must Know React",
     description: "React that beginner must know",
     img: img8,
     link: "https://github.com/deutschkihun/Must-Know-React-With-TypeScript",
   },
   {
-    id: "9",
+    id: "8",
     title: "Must Know JavaScript",
     description: "JavaScript that beginner must know",
     img: img9,
     link: "https://github.com/deutschkihun/Must-Know-JavaScript",
   },
   {
-    id: "10",
+    id: "9",
     title: "Must Know TypeScript",
     description: "TypeScript that beginner must know",
     img: img10,
     link: "https://github.com/deutschkihun/Must-Know-TypeScript",
   },
   {
-    id: "11",
+    id: "10",
     title: "Must Know TDD (Test Driven Development)",
     description: "TDD that beginner must know",
     img: img11,
     link: "https://github.com/deutschkihun/Must-Know-TDD",
   },
   {
-    id: "12",
+    id: "11",
     title: "Product API",
     description: "Custom product REST API with swagger UI documentation",
     img: img12,
     link: "https://productapi-deutschkihun.herokuapp.com/docs/",
   },
   {
-    id: "13",
+    id: "12",
     title: "Query API",
     description: "Custom query REST API by sorting querying and filtering",
     img: img13,
