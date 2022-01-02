@@ -1,3 +1,7 @@
 # Portfolio Web App
 
-> http://deutschkihun.com
+> This page is Kihun Kim's personal portfolio page. This page includes simple self-introduction, professional care experience, skills, resume, project demonstration, and contact page.
+
+## Demonstration
+
+http://deutschkihun.com
