@@ -11,6 +11,7 @@ interface Project {
   title: string;
   link?: string;
   paper?: string;
+  source?: string;
   description: string;
 }
 
@@ -53,6 +54,7 @@ export const WorkPage = (): JSX.Element => {
           link,
           description,
           paper,
+          source,
         } = project;
         const img = new Image();
         if (screenshot) {
@@ -60,7 +62,7 @@ export const WorkPage = (): JSX.Element => {
           img.onload = function () {
             const canvas = document.getElementById(id) as HTMLCanvasElement;
             const ctx = canvas && canvas.getContext("2d");
-            if (id === "4") {
+            if (id === "22") {
               canvas.width = 500;
               canvas.height = 300;
               ctx && ctx.drawImage(img, 0, 0, 500, 300);
@@ -99,6 +101,17 @@ export const WorkPage = (): JSX.Element => {
                   >
                     Paper
                   </Link>
+                )}
+                {source && link && <Space />}
+                {source && (
+                  <a
+                    href={source}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="download"
+                  >
+                    source
+                  </a>
                 )}
               </Thumbnail>
             </ProjectContainer>

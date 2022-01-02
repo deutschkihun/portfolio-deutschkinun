@@ -35,7 +35,7 @@ export const Container = styled.div`
     }
     .main-img {
       display: block;
-      grid-column: 8 / 10;
+      grid-column: 8 / 9;
     }
   }
 `;
