@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Header = styled.header`
   position: fixed;
@@ -93,21 +94,21 @@ export const Navbar = (): JSX.Element => {
               aria-labelledby="dropdownMenuButton"
               style={{ textAlign: "center", position: "unset", float: "none" }}
             >
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" to="/">
                 Home
-              </a>
+              </Link>
               <br />
-              <a className="dropdown-item" href="/profile">
+              <Link className="dropdown-item" to="/profile">
                 About
-              </a>
+              </Link>
               <br />
-              <a className="dropdown-item" href="/work">
+              <Link className="dropdown-item" to="/work">
                 Project
-              </a>
+              </Link>
               <br />
-              <a className="dropdown-item" href="/contact">
+              <Link className="dropdown-item" to="/contact">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </ToggleButton>
