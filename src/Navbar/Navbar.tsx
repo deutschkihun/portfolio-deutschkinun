@@ -32,7 +32,7 @@ export const Grid = styled.div`
       display: none;
     }
     .toggle-btn {
-      grid-column: 4 / 6;
+      grid-column: 4 / 8;
     }
   }
 `;
@@ -78,16 +78,16 @@ export const Navbar = (): JSX.Element => {
         </MenuContainer>
         <ToggleButton className="toggle-btn">
           <div className="dropdown">
-            <button
-              className="btn btn-secondary dropdown-toggle"
-              type="button"
+            <div
+              className="btn-secondary dropdown-toggle"
               id="dropdownMenuButton"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
+              style={{ cursor: "pointer" }}
             >
-              open dropdown
-            </button>
+              Open MenuBar
+            </div>
             <div
               className="dropdown-menu"
               aria-labelledby="dropdownMenuButton"
