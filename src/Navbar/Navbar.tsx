@@ -20,11 +20,25 @@ export const Grid = styled.div`
   grid-row-gap: 0px;
   padding-left: 10vw;
   padding-right: 5vw;
+  @media (min-width: 783px) {
+    .toggle-btn {
+      display: none;
+    }
+  }
+
+  @media (max-width: 782px) {
+    .menu-toggle {
+      display: none;
+    }
+    .toggle-btn {
+      grid-column: 6 / 9;
+    }
+  }
 `;
 
 const MenuLogo = styled.a`
   cursor: pointer;
-  grid-column: 1 / 4;
+  grid-column: 2 / 5;
 `;
 
 const MenuContainer = styled.div`
@@ -37,6 +51,8 @@ const Listing = styled.li`
   margin-right: 40px;
 `;
 
+const ToggleButton = styled.div``;
+
 export const Navbar = (): JSX.Element => {
   return (
     <Header>
@@ -46,7 +62,7 @@ export const Navbar = (): JSX.Element => {
             <Listing>deutschkihun</Listing>
           </ul>
         </MenuLogo>
-        <MenuContainer>
+        <MenuContainer className="menu-toggle">
           <ul>
             <MenuLogo href="/profile">
               <Listing>About</Listing>
@@ -59,6 +75,37 @@ export const Navbar = (): JSX.Element => {
             </MenuLogo>
           </ul>
         </MenuContainer>
+        <ToggleButton className="toggle-btn">
+          <div className="dropdown">
+            <button
+              className="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              open dropdown
+            </button>
+            <div
+              className="dropdown-menu"
+              aria-labelledby="dropdownMenuButton"
+              style={{ textAlign: "center" }}
+            >
+              <a className="dropdown-item" href="/profile">
+                About
+              </a>
+              <br />
+              <a className="dropdown-item" href="/work">
+                Project
+              </a>
+              <br />
+              <a className="dropdown-item" href="/contact">
+                Contact
+              </a>
+            </div>
+          </div>
+        </ToggleButton>
       </Grid>
     </Header>
   );

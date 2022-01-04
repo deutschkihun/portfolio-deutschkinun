@@ -194,7 +194,6 @@ input {
   .submit-btn {
     margin-top: 0;
     width: 100%;
-    border-radius: 0;
     border-top-right-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
   }
