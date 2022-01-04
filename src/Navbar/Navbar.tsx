@@ -84,7 +84,7 @@ export const Navbar = (): JSX.Element => {
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              style={{ cursor: "pointer", textAlign: "center" }}
+              style={{ cursor: "pointer", textAlign: "center", float: "none" }}
             >
               Menu Bar
             </div>
