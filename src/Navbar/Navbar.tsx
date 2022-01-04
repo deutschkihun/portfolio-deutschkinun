@@ -84,14 +84,14 @@ export const Navbar = (): JSX.Element => {
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              style={{ cursor: "pointer", textAlign: "center", float: "none" }}
+              style={{ cursor: "pointer", textAlign: "center" }}
             >
               Menu Bar
             </div>
             <div
               className="dropdown-menu"
               aria-labelledby="dropdownMenuButton"
-              style={{ textAlign: "center" }}
+              style={{ textAlign: "center", position: "unset", float: "none" }}
             >
               <a className="dropdown-item" href="/">
                 Home
