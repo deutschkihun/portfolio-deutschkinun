@@ -27,11 +27,12 @@ export const Grid = styled.div`
   }
 
   @media (max-width: 782px) {
+    .logo-toggle,
     .menu-toggle {
       display: none;
     }
     .toggle-btn {
-      grid-column: 6 / 9;
+      grid-column: 4 / 6;
     }
   }
 `;
@@ -57,7 +58,7 @@ export const Navbar = (): JSX.Element => {
   return (
     <Header>
       <Grid>
-        <MenuLogo href="/">
+        <MenuLogo href="/" className="logo-toggle">
           <ul>
             <Listing>deutschkihun</Listing>
           </ul>
@@ -92,6 +93,10 @@ export const Navbar = (): JSX.Element => {
               aria-labelledby="dropdownMenuButton"
               style={{ textAlign: "center" }}
             >
+              <a className="dropdown-item" href="/">
+                Home
+              </a>
+              <br />
               <a className="dropdown-item" href="/profile">
                 About
               </a>
