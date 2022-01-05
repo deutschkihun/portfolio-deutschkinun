@@ -182,12 +182,14 @@ input {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.task-input {
+  border-top-left-radius: var(--borderRadius);
+  border-bottom-left-radius: var(--borderRadius);
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (min-width: 576px) {
-  .task-input {
-    border-top-left-radius: var(--borderRadius);
-    border-bottom-left-radius: var(--borderRadius);
-    margin-bottom: 0.5rem;
-  }
+
   .submit-btn {
     margin-top: 0;
     width: 100%;
