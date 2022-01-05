@@ -88,7 +88,7 @@ export const Navbar = (): JSX.Element => {
               style={{
                 cursor: "pointer",
                 textAlign: "center",
-                background: "white",
+                background: "transparent",
                 color: "black",
               }}
             >
