@@ -12,22 +12,20 @@ export const ContactPage = (): JSX.Element => {
         className="main-box"
       >
         <Title>Contact Me </Title>
-        <div className="form-control">
-          <input
-            type="email"
-            name="email"
-            className="task-input"
-            placeholder="Email Address"
-            required={true}
-          />
-          <input
-            type="text"
-            name="name"
-            className="task-input"
-            placeholder="Full Name"
-            required={true}
-          />
-        </div>
+        <input
+          type="email"
+          name="email"
+          className="task-input"
+          placeholder="Email Address"
+          required={true}
+        />
+        <input
+          type="text"
+          name="name"
+          className="task-input"
+          placeholder="Full Name"
+          required={true}
+        />
         <textarea
           name="message"
           placeholder="Message"

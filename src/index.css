@@ -183,13 +183,10 @@ input {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 576px) {
-  .form-control {
-    display: flex;
-  }
   .task-input {
-    border-radius: 0;
     border-top-left-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
+    margin-bottom: 0.5rem;
   }
   .submit-btn {
     margin-top: 0;
@@ -218,16 +215,6 @@ form > a {
 .icon > a {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.form-control > :first-child {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-
-.form-control > :last-child {
-  margin-left: 1rem;
-  margin-bottom: 1rem;
 }
 
 .thumbwrap {
