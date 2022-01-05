@@ -31,11 +31,7 @@ export const ContactPage = (): JSX.Element => {
           placeholder="Message"
           required={true}
         ></textarea>
-        <button
-          type="submit"
-          className="btn submit-btn"
-          onClick={() => window.close()}
-        >
+        <button type="submit" className="btn submit-btn">
           submit
         </button>
         <div className="icon">
