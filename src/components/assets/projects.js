@@ -45,7 +45,7 @@ export const projects = [
     description:
       "Getting real-time updated sports teams and players information around the world. This project is in progress",
     img: img4,
-    link: "https://d3-gsap-react-exhibition.herokuapp.com/",
+    link: "https://d3-react-exhibition.herokuapp.com/",
     source: "https://github.com/deutschkihun/D3-GSAP-React-Exhibition",
   },
   {
