@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Switch, Route as Router, BrowserRouter } from "react-router-dom";
 import { Navbar } from "./Navbar/Navbar";
 import { Footer } from "./Footer/Footer";
+import { LoadingView } from "./components/LoadingView";
 
 const LandingPage = lazy(() =>
   import("./components/LandingPage/LandingPage").then(({ LandingPage }) => ({
@@ -36,7 +37,11 @@ const ErrorPage = lazy(() =>
 const App = (): JSX.Element => {
   return (
     <>
-      <Suspense fallback={<div>Loading....</div>}>
+      <Suspense
+        fallback={
+          <LoadingView title={"Loading ..."} body={"please wait a moment"} />
+        }
+      >
         <BrowserRouter>
           <Navbar />
           <Switch>
