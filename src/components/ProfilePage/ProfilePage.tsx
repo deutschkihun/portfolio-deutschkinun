@@ -29,25 +29,18 @@ export const ProfilePage = (): JSX.Element => {
   return (
     <Wrapper>
       <form className="main-box">
-        {/*<Title className="thumbwrap">
-          Kihun Kim
-          <span>
-            <img src={profile} alt="profile" />
-          </span>
-          </Title>*/}
         <Title>Kihun Kim</Title>
         <Intro>
-          Kihun Kim is a Coding Enthusiast, currently works as a Frontend
-          Engineer at PACE Telematices in Karlsruhe, Germany. He is currently
-          developing all-in-one mobile fueling application that clients can
-          handle all the functions they need to refuel with this app, such as
-          searching and payment system. He is an enterprising developer who is
-          not complacent and always seeks new challenges. Besides, he always
-          tries to find and make up for his shortcomings. He is steadily
-          carrying out personal projects outside of the commercial work. About
-          10 personal projects are currently released in his GitHub with the
-          source code. In online world, he is working under the nickname
-          &quot;deutschkihun&quot; instead of his real name.
+          Kihun Kim works as a Frontend Engineer at PACE Telematices in
+          Karlsruhe, Germany. He is currently developing all-in-one mobile
+          fueling application that clients can handle all the functions they
+          need to refuel with this app, such as searching and payment system. He
+          is an enterprising developer who is not complacent and always seeks
+          new challenges. Besides, he always tries to find and make up for his
+          shortcomings. He is steadily carrying out personal projects outside of
+          the commercial work. About 10 personal projects are currently released
+          in his GitHub with the source code. In online world, he is working
+          under the nickname &quot;deutschkihun&quot; instead of his real name.
         </Intro>
       </form>
       <form className="main-box">
@@ -87,24 +80,28 @@ export const ProfilePage = (): JSX.Element => {
         </Intro>
       </form>
       <form className="main-box">
-        <Title>Coding</Title>
+        <Title>Programming skills</Title>
         <Intro>
           <ul>
             <li>
               <SubTitle>Frontend</SubTitle>
-              JavaScript / TypeScript / React / React Native / HTML5 / CSS /
+              JavaScript / TypeScript / React / Redux / HTML5 / CSS /
               Styled-component / Passport.js
             </li>
             <Space />
             <li>
               <SubTitle>Backend</SubTitle>
-              Node.js / Express.js / MongoDB / REST API / Server-side rendering
-              (SSR) / Microservices architecture
+              Node.js / NoSQL / REST API
             </li>
             <Space />
             <li>
-              <SubTitle>DevOps</SubTitle>
-              Git / Gitlab / GitHub
+              <SubTitle>Data Visualization</SubTitle>
+              D3.js / Python
+            </li>
+            <Space />
+            <li>
+              <SubTitle>Web design, Animation</SubTitle>
+              Lottie.js(Airbnb) / After Effect(Adobe)
             </li>
           </ul>
         </Intro>
@@ -114,16 +111,18 @@ export const ProfilePage = (): JSX.Element => {
         <Intro>
           <ul>
             <li>
-              <SubTitle>TensorFlow Developer Certificate</SubTitle>
-              Fundational, practical machine learning skills through the
-              building and training of models using TensorFlow / Google
+              <SubTitle>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://drive.google.com/file/d/1gI0IZuz2WZL8H7CxLOFDwApnyEwgpRkE/view?usp=sharing"
+                >
+                  TensorFlow Developer Certificate
+                </a>
+              </SubTitle>
+              By TensorFlow Team / Google
             </li>
             <Space />
-            <li>
-              <SubTitle>Data Analyst Nanodegree</SubTitle>
-              Data Wrangling, Data Visualization, Statistics with Python /
-              Udacity
-            </li>
           </ul>
         </Intro>
       </form>
@@ -152,12 +151,21 @@ export const ProfilePage = (): JSX.Element => {
         <Title>Resume</Title>
         <Download>
           <Link
+            to="/files/Resume_KR.pdf"
+            target="_blank"
+            download
+            className="download"
+          >
+            다운로드 (Korean)
+          </Link>
+          <Space />
+          <Link
             to="/files/Resume_DE.pdf"
             target="_blank"
             download
             className="download"
           >
-            Download (DE)
+            Herunterladen (DE)
           </Link>
           <Space />
           <Link

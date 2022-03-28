@@ -17,6 +17,7 @@ export const Container = styled.div`
     margin-top: 6rem;
     display: grid;
     align-items: center;
+    text-align: justify;
   }
   h1 {
     font-weight: 700;
@@ -47,12 +48,15 @@ export const LandingPage = (): JSX.Element => {
       <Container>
         <div className="container">
           <div className="info">
-            <h1>Welcome to Kihun&apos;s Portfolio</h1>
+            <h1>Welcome to deutschkihun</h1>
             <p>
-              This portfolio is a web application that shows Kihun&apos;s short
-              introduction, work experiences, programming skills, and projects
-              that he has learned and collected so far. If you want to
-              experience this application, click the button below.
+              Hello, my name is Kihun and welcome to my portfolio page. This
+              site is a web portfolio application that has basic information
+              about Kihun. You can find relevant information and experience,
+              expertise and projects.I have also attached a function that you
+              can download my resume, so please download it if you need it. If
+              you have any personal questions, you can proceed by clicking the
+              contact menu. Thank you.
             </p>
             <Link to="/profile" className="btn">
               Get Started
