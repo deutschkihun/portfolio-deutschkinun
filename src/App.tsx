@@ -1,38 +1,14 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 import { Switch, Route as Router, BrowserRouter } from "react-router-dom";
-import { Navbar } from "./Navbar/Navbar";
-import { Footer } from "./Footer/Footer";
+import { Footers } from "./components/Footers";
+import { Headers } from "./components/Headers";
 import { LoadingView } from "./components/LoadingView";
-
-const LandingPage = lazy(() =>
-  import("./components/LandingPage/LandingPage").then(({ LandingPage }) => ({
-    default: LandingPage,
-  }))
-);
-
-const ContactPage = lazy(() =>
-  import("./components/ContactPage/ContactPage").then(({ ContactPage }) => ({
-    default: ContactPage,
-  }))
-);
-
-const ProfilePage = lazy(() =>
-  import("./components/ProfilePage/ProfilePage").then(({ ProfilePage }) => ({
-    default: ProfilePage,
-  }))
-);
-
-const WorkPage = lazy(() =>
-  import("./components/WorkPage/WorkPage").then(({ WorkPage }) => ({
-    default: WorkPage,
-  }))
-);
-
-const ErrorPage = lazy(() =>
-  import("./components/ErrorPage/ErrorPage").then(({ ErrorPage }) => ({
-    default: ErrorPage,
-  }))
-);
+import { LandingPage } from "./page/LandingPage";
+import { AboutPage } from "./page/AboutPage";
+import { ProjectPage } from "./page/ProjectPage";
+import { ContactPage } from "./page/ContactPage";
+import { Seperator } from "./helper/lib";
+import { KoreanLandingPage } from "./page/KoreanLandingPage";
 
 const App = (): JSX.Element => {
   return (
@@ -43,15 +19,17 @@ const App = (): JSX.Element => {
         }
       >
         <BrowserRouter>
-          <Navbar />
-          <Switch>
-            <Router exact path="/" component={LandingPage} />
-            <Router exact path="/profile" component={ProfilePage} />
-            <Router exact path="/work" component={WorkPage} />
-            <Router exact path="/contact" component={ContactPage} />
-            <Router path="*" component={ErrorPage} />
-          </Switch>
-          <Footer />
+          <Headers />
+          <Seperator>
+            <Switch>
+              <Router exact path="/" component={LandingPage} />
+              <Router exact path="/about" component={AboutPage} />
+              <Router exact path="/project" component={ProjectPage} />
+              <Router exact path="/contact" component={ContactPage} />
+              <Router exact path="/kr" component={KoreanLandingPage} />
+            </Switch>
+          </Seperator>
+          <Footers />
         </BrowserRouter>
       </Suspense>
     </>
