@@ -180,14 +180,14 @@ export const ProjectPageText = {
       title: "Digit recognition on furnace",
       description:
         "Seminar project: recognizing digit on blast furnace by AI automatically",
-      link: "/files/Seminar_Digitalisierung_in_der_Stahlindustrie.pdf",
+      link: "https://drive.google.com/file/d/1_HqckLlYRZdY3UiEciRIYdtLDwRvFE90/view?usp=sharing",
       img: furnace,
     },
     {
       title: "User Preference Service",
       description:
         "Bachelor thesis: building user preference application for individual mobility users ",
-      link: "https://github.com/deutschkihun/User-Preference-Service",
+      link: "https://drive.google.com/file/d/1zXH7KZtafyelipzZ9itkcu20cTqyZlU6/view?usp=sharing",
       img: preferences,
     },
   ],

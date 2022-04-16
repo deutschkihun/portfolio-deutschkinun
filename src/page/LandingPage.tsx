@@ -85,6 +85,7 @@ export const LandingPage = (): JSX.Element => {
 
       <Grid2 style={{ gridTemplateRows: "repeat(1, 50px)" }}>
         <Btn
+          style={{ width: "50%" }}
           onClick={() => history.push("/about")}
           variant="primary"
           size="lg"
