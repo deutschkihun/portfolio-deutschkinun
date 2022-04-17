@@ -194,7 +194,7 @@ export const SearchContainerWrap = styled.div`
   width: 100%;
   margin: 0 auto;
   height: 400px;
-  margin-top: 70px;
+  margin-top: 57px;
   z-index: 10;
   outline: 0;
   background-color: #fff;
@@ -497,7 +497,6 @@ export const SildeContaier = styled.div`
   margin: auto;
   border-radius: 8px;
   color: #212529;
-  position: relative;
   margin-bottom: 3rem;
   height: 500px;
 `;
