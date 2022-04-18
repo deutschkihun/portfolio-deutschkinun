@@ -1,25 +1,29 @@
 import React, { useState } from "react";
 import { links } from "../assets/data";
+import list from "../assets/list.svg";
+import close from "../assets/close.svg";
+import { Sidebar } from "../helper/lib";
 
 const SidebarComponent = (): JSX.Element => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
 
   return (
     <>
-      <i
-        className={`${sideBarOpen ? "fa fa-bars sidebar " : "fa fa-bars"}`}
-        aria-hidden="true"
-        onClick={() => setSideBarOpen(true)}
-      ></i>
+      <img
+        src={list}
+        onClick={() => setSideBarOpen(!sideBarOpen)}
+        className="fa-bars"
+        alt="list"
+      />
       {sideBarOpen && (
-        <aside className="sidebar">
+        <Sidebar>
           <div className="sidebar-header">
-            <i
-              className="fa fa-times"
-              aria-hidden="true"
-              style={{ fontSize: "20px" }}
-              onClick={() => setSideBarOpen(false)}
-            ></i>
+            <img
+              src={close}
+              onClick={() => setSideBarOpen(!sideBarOpen)}
+              className="fa-times"
+              alt="close"
+            />
           </div>
           <ul className="links">
             {links.map((link) => {
@@ -31,7 +35,7 @@ const SidebarComponent = (): JSX.Element => {
               );
             })}
           </ul>
-        </aside>
+        </Sidebar>
       )}
     </>
   );

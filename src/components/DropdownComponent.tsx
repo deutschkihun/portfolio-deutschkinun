@@ -21,7 +21,7 @@ export const DropdownComponent = (): JSX.Element => {
             <>English</>
           </>
         )}
-        <ul className="dropdown_menu">
+        <div className="dropdown_menu">
           <li>
             <a href="/kr">
               <img src={korea} alt="korea" />
@@ -34,7 +34,7 @@ export const DropdownComponent = (): JSX.Element => {
               English
             </a>
           </li>
-        </ul>
+        </div>
       </li>
     </Dropdown>
   );

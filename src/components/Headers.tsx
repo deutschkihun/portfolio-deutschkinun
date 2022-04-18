@@ -16,6 +16,7 @@ import {
 import SidebarComponent from "./SidebarComponent";
 import { DropdownComponent } from "./DropdownComponent";
 import search from "../assets/search.svg";
+import close from "../assets/close.svg";
 
 export const Headers = (): JSX.Element => {
   const [active, setActive] = useState<boolean>(false);
@@ -33,16 +34,18 @@ export const Headers = (): JSX.Element => {
           <About to="/about">About</About>
           <Project to="/project">Project</Project>
           <Contact to="/contact">Contact</Contact>
-          <i
-            className={`${active ? "fa fa-times" : "inactive"}`}
-            aria-hidden="true"
+          <img
+            src={close}
+            alt="close"
             onClick={toggleEvent}
-          ></i>
-          <i
+            className={`${active ? "fa-times" : "inactive"}`}
+          />
+          <img
             onClick={toggleEvent}
-            className={`${active ? "inactive" : "fa fa-search"}`}
-            aria-hidden="true"
-          ></i>
+            src={search}
+            className={`${active ? "inactive" : "fa-search"}`}
+            alt="search"
+          />
         </Grid>
       </Header>
       {active && (
