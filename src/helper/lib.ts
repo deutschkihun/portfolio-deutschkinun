@@ -111,7 +111,7 @@ export const Grid = styled.nav`
   }
 
   /* tablet pc and mobile device */
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     .fa-bars {
       margin-left: 1rem;
     }
@@ -329,6 +329,10 @@ export const Grid2 = styled.div`
     margin: 0;
     font-size: 30px;
     text-align: justify;
+  }
+
+  a {
+    color: #fff;
   }
 `;
 

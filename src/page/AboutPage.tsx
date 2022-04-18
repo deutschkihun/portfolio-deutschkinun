@@ -66,15 +66,15 @@ export const AboutPage = (): JSX.Element => {
       </Form>
       <Form>
         <Title>{certificate}</Title>
-        <Btn
-          onClick={() =>
-            window.location.assign(
-              "https://drive.google.com/file/d/1gI0IZuz2WZL8H7CxLOFDwApnyEwgpRkE/view?usp=sharing"
-            )
-          }
+        <Link
+          to={{
+            pathname:
+              "https://drive.google.com/file/d/1gI0IZuz2WZL8H7CxLOFDwApnyEwgpRkE/view?usp=sharing",
+          }}
+          target="_blank"
         >
           {certificateAnswer}
-        </Btn>
+        </Link>
       </Form>
       <Form>
         <Title>{languages}</Title>

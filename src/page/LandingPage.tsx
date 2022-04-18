@@ -12,6 +12,7 @@ import {
 import profile from "../assets/profile.png";
 import { useHistory } from "react-router";
 import { landingPageText } from "../assets/data";
+import { Link } from "react-router-dom";
 
 export const LandingPage = (): JSX.Element => {
   const history = useHistory();
@@ -84,14 +85,8 @@ export const LandingPage = (): JSX.Element => {
       </Profile>
 
       <Grid2 style={{ gridTemplateRows: "repeat(1, 50px)" }}>
-        <Btn
-          style={{ width: "50%" }}
-          onClick={() => history.push("/about")}
-          variant="primary"
-          size="lg"
-          active
-        >
-          Get2Know
+        <Btn style={{ width: "50%" }} variant="primary" size="lg" active>
+          <Link to="/about">Get2Know</Link>
         </Btn>
       </Grid2>
 
