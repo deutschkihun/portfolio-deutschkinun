@@ -33,7 +33,7 @@ export const landingPageText = {
   name: "Kihun Kim",
   question1: "Who am I ?",
   answer1:
-    "I not only write code, but also tries to find the best reasonable solution for business problems. I think about data, visualize them in many different ways. Currently junior software engineer, doing frontend development at PACE Telematics in Germany.",
+    "I am not just only a write code, but also tries to find the best reasonable solution for business problems. I think about data, visualize them in many different ways. Currently junior software engineer, doing frontend development at PACE Telematics in Germany.",
   question2: "What Makes Me Unique?",
   answer2:
     "I really enjoy learning new things and am constantly seeking out new learning opportunities. When solving problems, I try to consider not only technical details, but also business aspects",
