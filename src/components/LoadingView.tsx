@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
-import { LoadingViewBody, LoadingViewTitle } from "../helper/lib";
+import { LoadingViewBody, LoadingViewTitle } from "../helper/lib/Loading";
 import { Theme } from "../helper/theme";
 import { Metrics } from "../helper/Metrics";
 

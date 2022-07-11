@@ -1,39 +1,44 @@
 import React, { Suspense } from "react";
-import { Switch, Route as Router, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Footers } from "./components/Footers";
-import { Headers } from "./components/Headers";
+import { Header } from "./components/Header";
 import { LoadingView } from "./components/LoadingView";
-import { LandingPage } from "./page/LandingPage";
-import { AboutPage } from "./page/AboutPage";
-import { ProjectPage } from "./page/ProjectPage";
-import { ContactPage } from "./page/ContactPage";
-import { Seperator } from "./helper/lib";
-import { KoreanLandingPage } from "./page/KoreanLandingPage";
+import { GlobalStyle, Seperator } from "./helper/lib/Global";
+import { Home } from "./page/Home";
+import { Project } from "./page/Project";
+import { Contact } from "./page/Contact";
+import { About } from "./page/About";
+import enUsMsg from "./locale/en-US.json";
+import koMsg from "./locale/ko.json";
+import { IntlProvider } from "react-intl";
 
-const App = (): JSX.Element => {
+const locale = localStorage.getItem("locale") ?? "ko";
+const messages = { "en-US": enUsMsg, ko: koMsg }[locale];
+
+export default function App() {
   return (
     <>
+      <GlobalStyle />
       <Suspense
         fallback={
           <LoadingView title={"Loading ..."} body={"please wait a moment"} />
         }
       >
         <BrowserRouter>
-          <Headers />
-          <Seperator>
-            <Switch>
-              <Router exact path="/" component={LandingPage} />
-              <Router exact path="/about" component={AboutPage} />
-              <Router exact path="/project" component={ProjectPage} />
-              <Router exact path="/contact" component={ContactPage} />
-              <Router exact path="/kr" component={KoreanLandingPage} />
-            </Switch>
-          </Seperator>
-          <Footers />
+          <IntlProvider locale={locale} messages={messages}>
+            <Header />
+            <Seperator>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/project" element={<Project />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+              </Routes>
+            </Seperator>
+            <Footers />
+          </IntlProvider>
         </BrowserRouter>
       </Suspense>
     </>
   );
-};
-
-export default App;
+}

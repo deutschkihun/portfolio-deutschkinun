@@ -1,24 +1,26 @@
 import React from "react";
-import { Footer } from "../helper/lib";
+import {
+  Footer,
+  FooterCategory,
+  FooterContainer,
+  FooterItem,
+  Copyright,
+} from "../helper/lib/Footer";
 
 export const Footers = (): JSX.Element => {
   return (
     <Footer>
-      <div className="container">
-        <div className="row">
-          <div className="footer-category">
-            <h2>Shortcut menu</h2>
+      <FooterContainer>
+        <FooterItem>
+          <FooterCategory>
+            <h2>Menu</h2>
             <a href="/about">about</a>
             <a href="/project">project</a>
-            <a href="/contact">contact</a>
-          </div>
-          <div className="footer-category">
-            <h2>My projects</h2>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://d3-react-exhibition.herokuapp.com/"
-            >
+            <a href="/contact">contact</a>`
+          </FooterCategory>
+          <FooterCategory>
+            <h2>Projects</h2>
+            <a href="https://d3-react-exhibition.herokuapp.com/">
               D3 react exihibition
             </a>
             <a
@@ -42,23 +44,23 @@ export const Footers = (): JSX.Element => {
             >
               Sport db app
             </a>
+          </FooterCategory>
+          <FooterCategory>
+            <h2>Ongoing</h2>
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://queryapi-deutschkihun.herokuapp.com/"
+              href="https://www.npmjs.com/package/@deutschkihun/ultimate-boilerplate"
             >
-              Query api
+              @deutschkihun/ultimate-boilerplate
             </a>
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://onlineshop-baseline-api.herokuapp.com/"
+              href="https://www.npmjs.com/package/@deutschkihun/custom-react-component-lib"
             >
-              Baseline api
+              @deutschkihun/custom-react-component-lib
             </a>
-          </div>
-          <div className="footer-category">
-            <h2>Comming soon projects</h2>
             <a
               target="_blank"
               rel="noreferrer"
@@ -66,16 +68,9 @@ export const Footers = (): JSX.Element => {
             >
               Animation 3d world
             </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/deutschkihun/ringle-google-calender"
-            >
-              Calender app
-            </a>
-          </div>
-          <div className="footer-category">
-            <h2>Social network</h2>
+          </FooterCategory>
+          <FooterCategory>
+            <h2>Contact</h2>
             <a
               target="_blank"
               rel="noreferrer"
@@ -90,12 +85,10 @@ export const Footers = (): JSX.Element => {
             >
               Linkedin
             </a>
-          </div>
-        </div>
-        <p style={{ margin: "1.5rem 0" }}>
-          © 2022 Deutschkihun. All rights reserved.
-        </p>
-      </div>
+          </FooterCategory>
+        </FooterItem>
+        <Copyright>© 2022 Deutschkihun. All rights reserved.</Copyright>
+      </FooterContainer>
     </Footer>
   );
 };

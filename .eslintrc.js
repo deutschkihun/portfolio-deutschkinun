@@ -4,6 +4,7 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
+    jest: true,
   },
   globals: {
     Atomics: "readonly",
@@ -11,8 +12,8 @@ module.exports = {
   },
   parserOptions: {
     ecmaFeatures: {
-      ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-      sourceType: "module", // Allows for the use of imports
+      ecmaVersion: 2018,
+      sourceType: "module",
       jsx: true,
       project: ["./tsconfig.json"],
     },
@@ -22,7 +23,18 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended", // Uses the recommended rules from @typescript-eslint/eslint-plugin
-    "plugin:prettier/recommended", // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
   ],
+  ignorePatterns: [
+    "Keys.ts",
+    "*.test.*",
+    "**/mocks/*",
+    "**/test/*",
+    "packages/**/env/*",
+  ],
+  rules: {
+    "@typescript-eslint/no-var-requires": ["off"],
+    "react/prop-types": ["off"],
+  },
 };
