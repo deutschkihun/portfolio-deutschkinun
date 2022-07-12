@@ -58,18 +58,39 @@ export const About = (): JSX.Element => {
                 </tr>
                 <tr>
                   <td className="col-table">
-                    <FormattedMessage id="AboutJD-col" />
+                    <FormattedMessage id="AboutJD-col" defaultMessage="" />
                   </td>
                   <td>
                     <ul className="info-list">
                       <li className="info-list-item">
-                        <FormattedMessage id={`JD-col${i + 1}-1`} />
+                        <FormattedMessage
+                          id={`JD-col${i + 1}-1`}
+                          defaultMessage=""
+                        />
                       </li>
-                      <li className="info-list-item">
-                        <FormattedMessage id={`JD-col${i + 1}-2`} />
+                      <li className="sub-info-list-item">
+                        <FormattedMessage
+                          id={`JD-col${i + 1}-2-1`}
+                          defaultMessage=""
+                        />
                       </li>
-                      <li className="info-list-item">
-                        <FormattedMessage id={`JD-col${i + 1}-3`} />
+                      <li className="sub-info-list-item">
+                        <FormattedMessage
+                          id={`JD-col${i + 1}-2-2`}
+                          defaultMessage=""
+                        />
+                      </li>
+                      <li className="sub-info-list-item">
+                        <FormattedMessage
+                          id={`JD-col${i + 1}-2-3`}
+                          defaultMessage=""
+                        />
+                      </li>
+                      <li className="sub-info-list-item">
+                        <FormattedMessage
+                          id={`JD-col${i + 1}-2-4`}
+                          defaultMessage=""
+                        />
                       </li>
                     </ul>
                   </td>

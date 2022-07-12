@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -7,12 +7,11 @@ export const GlobalStyle = createGlobalStyle`
 
   @keyframes stack-ani {
     from { transform: translateY()}
-    to { transform: translateY(1em) scale(1.05)}
+    to { transform: translateY(1em) scale(1)}
   }
   
   .stack-icon {
 
-    z-index: -1;
     :nth-child(1) {
       animation: stack-ani 1s alternate infinite 0s;
     }
@@ -117,75 +116,4 @@ export const GlobalStyle = createGlobalStyle`
     color: #fff;
     cursor: pointer;
   }
-
-  .toggle-container {
-    grid-column: 3 / 4;
-    max-height: 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .toggle-container.night {
-    background-color: rgba(17, 16, 34, 0.911);
-  }
-
-  .label {
-    background-color: black;
-    display: flex;
-    height: 40px; 
-    border-radius: 50px;
-    width: 100px;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 0 15px;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-    border: 2px solid white;
-  }
-  .label .fa-moon {
-    color: rgb(250, 250, 250);
-  }
-  .label .fa-sun {
-    color: rgb(243, 188, 36);
-  }
-  .blob {
-    position: absolute;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    background: rgb(169, 241, 243);
-    border-radius: 50px;
-    transition: .5s ease all;
-  }
-  .checkbox {
-    opacity: 0;
-    position: absolute;
-  }
-  .info {
-    display: block;
-    margin-top: 50px;
-  }
-  .info.night {
-    color: white;
-  }
-  .checkbox:checked + .label .blob {
-    left: 0;
-  }
-  .checkbox:checked + .label {
-    background-color: rgb(82, 81, 83);
-    border: 2px solid black;
-  }
-`;
-
-export const Main = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-`;
-
-export const Content = styled.section`
-  margin-top: 150px;
-  flex: 1 auto;
 `;

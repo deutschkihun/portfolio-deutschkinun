@@ -1,16 +1,15 @@
 import React from "react";
+import { ToggleContainer, ToggleLabel } from "../helper/lib/Toggle";
 
 export const DarkLightMode = () => {
   return (
-    <div className="menu toggle-container night-mode-available">
-      <div className="night-mode-button">
-        <input type="checkbox" className="checkbox" id="night-mode" />
-        <label htmlFor="night-mode" className="label">
-          <i className="fas fa-moon"></i>
-          <i className="fas fa-sun"></i>
-          <div className="blob"></div>
-        </label>
-      </div>
-    </div>
+    <ToggleContainer>
+      <input type="checkbox" className="checkbox" id="night-mode" />
+      <ToggleLabel htmlFor="night-mode" className="label">
+        <i className="fas fa-moon" />
+        <i className="fas fa-sun" />
+        <div className="blob" />
+      </ToggleLabel>
+    </ToggleContainer>
   );
 };

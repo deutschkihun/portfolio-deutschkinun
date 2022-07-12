@@ -180,10 +180,33 @@ export const Tables = styled(Table)`
     .info-list-item {
       display: flex;
       margin: 0.5em 0;
+      text-align: start;
     }
+
+    .sub-info-list-item {
+      display: flex;
+      margin: 0.5em 1em;
+      text-align: start;
+    }
+
     .info-list-item:before {
       content: "⌘";
       margin-right: 0.5em;
     }
+    .sub-info-list-item:before {
+      content: "➭";
+      margin-right: 0.5em;
+    }
   }
+`;
+
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+export const Content = styled.section`
+  margin-top: 150px;
+  flex: 1 auto;
 `;

@@ -12,7 +12,7 @@ export const ExperienceEN = [
     timerange: "December 2020 – May 2021",
     location: "Heidelberg, Germany",
     company: "Vayu Software (Core Development Team)",
-    role: "Junior Fullstack Engineer / full-time, internship",
+    role: "Junior Frontend Engineer / full-time, internship",
     techstack: "Typescript,React,PHP,Nodejs",
     description: "Low code platform development",
   },
@@ -31,7 +31,7 @@ export const ExperienceKR = [
     timerange: "12월 2020 – 5월 2021",
     location: "하이델베르크, 독일",
     company: "Vayu Software (코어 개발팀)",
-    role: "주니어 풀스택 엔지니어 / 풀타임, 인턴",
+    role: "주니어 프론트앤드 엔지니어 / 풀타임, 인턴",
     description: "Low code platform development",
   },
 ];
