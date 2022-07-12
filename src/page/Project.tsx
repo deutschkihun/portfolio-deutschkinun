@@ -7,17 +7,21 @@ import {
   CardTitle,
   CardDesc,
 } from "../helper/lib/Card";
-import { ProjectText } from "../assets/data";
 import { FormTitle } from "../helper/lib/Component";
+import { FormattedMessage } from "react-intl";
+import { ProjectENList, ProjectKRList } from "../assets/thumbnail/list";
 
 export const Project = (): JSX.Element => {
-  const { projectTitle, projectDescription } = ProjectText;
+  const lang =
+    localStorage.getItem("locale") === "kr" ? ProjectKRList : ProjectENList;
   return (
     <>
-      <FormTitle>{projectTitle}</FormTitle>
+      <FormTitle>
+        <FormattedMessage id="ProjectTitle" />
+      </FormTitle>
       <CardContainer>
         <CardList>
-          {projectDescription.map(({ title, description, link, img }, i) => (
+          {lang.map(({ title, description, link, img }, i) => (
             <CardItem key={i}>
               <CardImg
                 style={{ backgroundImage: `url(${img})` }}

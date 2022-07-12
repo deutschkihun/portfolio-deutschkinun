@@ -1,54 +1,102 @@
 import React from "react";
-import { AboutText } from "../assets/data";
-import { FormTitle, FormContainer, FormItem } from "../helper/lib/Component";
+import {
+  FormTitle,
+  FormContainer,
+  FormItem,
+  Tables,
+} from "../helper/lib/Component";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { FormattedMessage } from "react-intl";
+import { StackList } from "../assets/stack/list";
+import { LangList } from "../assets/lang/list";
+import { ExperienceKR, ExperienceEN } from "../assets/experience/list";
 
 export const About = (): JSX.Element => {
-  const {
-    ExperienceTitle,
-    ExperienceDescription,
-    CompetenceTitle,
-    CompetenceDescription,
-    LanguageTitle,
-    LanguageDescription,
-  } = AboutText;
-
+  const lang =
+    localStorage.getItem("locale") === "kr" ? ExperienceKR : ExperienceEN;
   return (
     <>
       <FormContainer>
-        <FormTitle>{ExperienceTitle}</FormTitle>
+        <FormTitle>
+          <FormattedMessage id="AboutTitle" />
+        </FormTitle>
         <ul>
-          {ExperienceDescription.map(
-            ({ timerange, company, location, role, description }, i) => (
-              <div key={i}>
-                <li style={{ fontSize: "25px" }}>{role}</li>
-                <li>{company}</li>
-                <li>{timerange}</li>
-                <li>{location}</li>
-                <li>{description}</li>
-                <br />
-              </div>
-            )
-          )}
+          {lang.map(({ role, company, timerange, location }, i) => (
+            <Tables striped bordered hover key={i}>
+              <thead>
+                <tr>
+                  <th className="col-table">#</th>
+                  <th>
+                    <FormattedMessage id="AboutExplanation" />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="col-table">
+                    <FormattedMessage id="AboutCompany-col" />
+                  </td>
+                  <td>{company}</td>
+                </tr>
+                <tr>
+                  <td className="col-table">
+                    <FormattedMessage id="AboutDuration-col" />
+                  </td>
+                  <td>{timerange}</td>
+                </tr>
+                <tr>
+                  <td className="col-table">
+                    <FormattedMessage id="AboutLocation-col" />
+                  </td>
+                  <td>{location}</td>
+                </tr>
+                <tr>
+                  <td className="col-table">
+                    <FormattedMessage id="AboutRole-col" />
+                  </td>
+                  <td>{role}</td>
+                </tr>
+                <tr>
+                  <td className="col-table">
+                    <FormattedMessage id="AboutJD-col" />
+                  </td>
+                  <td>
+                    <ul className="info-list">
+                      <li className="info-list-item">
+                        <FormattedMessage id={`JD-col${i + 1}-1`} />
+                      </li>
+                      <li className="info-list-item">
+                        <FormattedMessage id={`JD-col${i + 1}-2`} />
+                      </li>
+                      <li className="info-list-item">
+                        <FormattedMessage id={`JD-col${i + 1}-3`} />
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </Tables>
+          ))}
         </ul>
       </FormContainer>
-      <FormTitle>{CompetenceTitle}</FormTitle>
+      <FormTitle>
+        <FormattedMessage id="CompetenceTitle" />
+      </FormTitle>
       <FormItem>
-        {CompetenceDescription.map((m, i) => (
-          <OverlayTrigger
-            key={i}
-            overlay={<Tooltip style={{ color: "red" }}>{m.name}</Tooltip>}
-          >
-            <img className="stack" src={m.img} alt={m.name} />
+        {StackList.map((m, i) => (
+          <OverlayTrigger key={i} overlay={<Tooltip>{m.name}</Tooltip>}>
+            <img className="stack-icon" src={m.img} alt={m.name} />
           </OverlayTrigger>
         ))}
       </FormItem>
-      <FormTitle>{LanguageTitle}</FormTitle>
+      <FormTitle>
+        <FormattedMessage id="LanguageTitle" />
+      </FormTitle>
       <FormItem>
-        {LanguageDescription.map((m, i) => (
+        {LangList.map((m, i) => (
           <OverlayTrigger key={i} overlay={<Tooltip>{m.name}</Tooltip>}>
             <img
-              className="stack"
+              className="stack-icon"
               src={m.img}
               alt={m.name}
               title="this will be displayed as a tooltip"

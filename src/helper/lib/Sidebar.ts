@@ -1,11 +1,29 @@
 import styled from "styled-components";
 
-export const SidebarContainer = styled.aside`
+export const SidebarContainer = styled.div`
+  .open-sidebar {
+    transform: translateX(0px);
+  }
+
+  .close-sidebar {
+    transform: translateX(-300px);
+  }
+
+  #sidebar-list {
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const SidebarList = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 150px;
   width: 30%;
+  min-width: 100px;
   height: 100%;
   background: #313336;
   display: grid;

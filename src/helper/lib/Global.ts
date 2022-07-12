@@ -10,7 +10,9 @@ export const GlobalStyle = createGlobalStyle`
     to { transform: translateY(1em) scale(1.05)}
   }
   
-  .stack {
+  .stack-icon {
+
+    z-index: -1;
     :nth-child(1) {
       animation: stack-ani 1s alternate infinite 0s;
     }
@@ -115,10 +117,10 @@ export const GlobalStyle = createGlobalStyle`
     color: #fff;
     cursor: pointer;
   }
- 
 
   .toggle-container {
-    grid-column: 11 / 12;
+    grid-column: 3 / 4;
+    max-height: 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -131,7 +133,7 @@ export const GlobalStyle = createGlobalStyle`
   .label {
     background-color: black;
     display: flex;
-    height: 30px; 
+    height: 40px; 
     border-radius: 50px;
     width: 100px;
     justify-content: space-between;
@@ -177,7 +179,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const Seperator = styled.main`
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+export const Content = styled.section`
   margin-top: 150px;
-  min-height: calc(100vh - 150px);
+  flex: 1 auto;
 `;

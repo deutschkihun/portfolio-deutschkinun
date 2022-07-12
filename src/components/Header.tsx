@@ -11,6 +11,7 @@ import { Languages } from "./Languages";
 import { Search } from "./Search";
 import { Sidebar } from "./Sidebar";
 import { DarkLightMode } from "./DarkLightMode";
+import { FormattedMessage } from "react-intl";
 
 export const Header = (): JSX.Element => {
   const [active, setActive] = useState<boolean>(false);
@@ -24,17 +25,17 @@ export const Header = (): JSX.Element => {
         <HeaderContainer>
           <Sidebar />
           <HomeComponent to="/">deutschkihun</HomeComponent>
+          <DarkLightMode />
           <Languages />
           <AboutComponent className="menu" to="/about">
-            About
+            <FormattedMessage id="About" />
           </AboutComponent>
           <ProjectComponent className="menu" to="/project">
-            Project
+            <FormattedMessage id="Projects" />
           </ProjectComponent>
           <ContactComponent className="menu" to="/contact">
-            Contact
+            <FormattedMessage id="Contact" />
           </ContactComponent>
-          <DarkLightMode />
           {active ? (
             <i
               className="fa fa-times"
@@ -50,7 +51,7 @@ export const Header = (): JSX.Element => {
           )}
         </HeaderContainer>
       </HeaderComponent>
-      {active && <Search />}
+      <Search active={active} />
     </>
   );
 };

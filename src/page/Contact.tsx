@@ -6,8 +6,11 @@ import {
   TextArea,
 } from "../helper/lib/Component";
 import { Button } from "react-bootstrap";
+import { FormattedMessage, useIntl } from "react-intl";
 
 export const Contact = (): JSX.Element => {
+  const intl = useIntl();
+
   return (
     <>
       <FormContainer
@@ -16,21 +19,29 @@ export const Contact = (): JSX.Element => {
         method="POST"
         className="main-box"
       >
-        <FormTitle>Contact Me</FormTitle>
+        <FormTitle>
+          <FormattedMessage id="ContactTitle" />
+        </FormTitle>
         <Input
           type="email"
           name="email"
-          placeholder="Email Address"
+          placeholder={intl.formatMessage({ id: "Email" })}
           required={true}
         />
         <Input
           type="text"
           name="name"
-          placeholder="Full Name"
+          placeholder={intl.formatMessage({ id: "Name" })}
           required={true}
         />
-        <TextArea name="message" placeholder="Message" required={true} />
-        <Button type="submit">Submit</Button>
+        <TextArea
+          name="message"
+          placeholder={intl.formatMessage({ id: "Message" })}
+          required={true}
+        />
+        <Button type="submit">
+          <FormattedMessage id="Submit" />
+        </Button>
       </FormContainer>
     </>
   );

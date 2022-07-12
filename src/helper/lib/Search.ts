@@ -1,6 +1,20 @@
 import styled from "styled-components";
 
 export const SearchContainer = styled.div`
+  .open-searchbar {
+    transform: translateY(0px);
+  }
+
+  .close-searchbar {
+    transform: translateY(-600px);
+  }
+
+  #searchbar-list {
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+`;
+
+export const SearchList = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -19,7 +33,7 @@ export const SearchWrap = styled.div`
   background: #111;
 
   @media screen and (max-width: 500px) {
-    height: 100vh;
+    height: 70vh;
   }
 `;
 

@@ -1,3 +1,4 @@
+import { Table } from "react-bootstrap";
 import styled from "styled-components";
 
 export const FormTitle = styled.h2`
@@ -11,6 +12,7 @@ export const FormContainer = styled.form`
   box-shadow: 9px 12px 25px -5px rgb(255 255 255 / 15%),
     11px 13px 10px -5px rgb(255 255 255 / 10%);
   padding: 2rem 2.5rem;
+  min-width: 350px;
   max-width: 70vw;
   width: 100%;
   margin: 50px auto;
@@ -43,6 +45,10 @@ export const FormItem = styled.div`
   grid-gap: 20px;
   img {
     width: 100px;
+
+    @media screen and (max-width: 468px) {
+      width: 50px;
+    }
   }
 `;
 
@@ -129,20 +135,6 @@ export const Silder = styled.div`
   }
 `;
 
-export const Profile = styled.div`
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-rows: repeat(1, 450px);
-  grid-template-columns: repeat(1, 12);
-  justify-items: center;
-  padding: 1rem 0;
-
-  img {
-    margin: auto;
-  }
-`;
-
 export const Intro = styled.div`
   max-width: 70vw;
   margin: auto;
@@ -165,6 +157,33 @@ export const Intro = styled.div`
     h1 {
       font-size: 110px;
       text-align: center;
+    }
+  }
+`;
+
+export const Tables = styled(Table)`
+  min-width: 300px;
+  max-width: 70vw;
+
+  .col-table {
+    flex-shrink: 0;
+    width: 170px;
+  }
+
+  td {
+    text-align: center;
+    line-height: 2.5rem;
+
+    .info-list {
+      margin-bottom: 2rem;
+    }
+    .info-list-item {
+      display: flex;
+      margin: 0.5em 0;
+    }
+    .info-list-item:before {
+      content: "⌘";
+      margin-right: 0.5em;
     }
   }
 `;

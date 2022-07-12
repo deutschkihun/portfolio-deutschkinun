@@ -19,7 +19,7 @@ export const HeaderContainer = styled.div`
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(10px, auto);
   grid-gap: 10px;
-  justify-items: center;
+  place-items: center center;
   color: white;
 
   .fa-bars {
@@ -28,7 +28,6 @@ export const HeaderContainer = styled.div`
 
   .fa-search,
   .fa-times {
-    padding-top: 5px;
     font-size: 20px;
     display: grid;
     grid-column: 12 / 13;
@@ -56,17 +55,17 @@ export const HeaderContainer = styled.div`
 `;
 
 export const HomeComponent = styled(Link)`
-  grid-column: 1 / 4;
+  grid-column: 1 / 3;
 `;
 
 export const AboutComponent = styled(Link)`
-  grid-column: 8 / 9;
-`;
-
-export const ProjectComponent = styled(Link)`
   grid-column: 9 / 10;
 `;
 
-export const ContactComponent = styled(Link)`
+export const ProjectComponent = styled(Link)`
   grid-column: 10 / 11;
+`;
+
+export const ContactComponent = styled(Link)`
+  grid-column: 11 / 12;
 `;

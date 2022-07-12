@@ -15,10 +15,6 @@ export const CardList = styled.ul`
 export const CardItem = styled.li`
   margin-bottom: 2rem;
   background: white;
-
-  :hover {
-    cursor: pointer;
-  }
 `;
 
 export const CardImg = styled.figure`
@@ -28,6 +24,12 @@ export const CardImg = styled.figure`
   background-position: center;
   background-color: lightgray;
   background-size: cover;
+
+  :hover {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    transform: scale(1.2);
+    z-index: 2;
+  }
 
   img {
     display: none;

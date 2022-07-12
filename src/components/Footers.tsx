@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import {
   Footer,
   FooterCategory,
@@ -13,13 +14,23 @@ export const Footers = (): JSX.Element => {
       <FooterContainer>
         <FooterItem>
           <FooterCategory>
-            <h2>Menu</h2>
-            <a href="/about">about</a>
-            <a href="/project">project</a>
-            <a href="/contact">contact</a>`
+            <h2>
+              <FormattedMessage id="Menu" />
+            </h2>
+            <a href="/about">
+              <FormattedMessage id="About" />
+            </a>
+            <a href="/project">
+              <FormattedMessage id="Projects" />
+            </a>
+            <a href="/contact">
+              <FormattedMessage id="Contact" />
+            </a>
           </FooterCategory>
           <FooterCategory>
-            <h2>Projects</h2>
+            <h2>
+              <FormattedMessage id="MyApp" />
+            </h2>
             <a href="https://d3-react-exhibition.herokuapp.com/">
               D3 react exihibition
             </a>
@@ -46,7 +57,9 @@ export const Footers = (): JSX.Element => {
             </a>
           </FooterCategory>
           <FooterCategory>
-            <h2>Ongoing</h2>
+            <h2>
+              <FormattedMessage id="Ongoing" />
+            </h2>
             <a
               target="_blank"
               rel="noreferrer"
@@ -70,7 +83,9 @@ export const Footers = (): JSX.Element => {
             </a>
           </FooterCategory>
           <FooterCategory>
-            <h2>Contact</h2>
+            <h2>
+              <FormattedMessage id="Contact" />
+            </h2>
             <a
               target="_blank"
               rel="noreferrer"
@@ -87,7 +102,9 @@ export const Footers = (): JSX.Element => {
             </a>
           </FooterCategory>
         </FooterItem>
-        <Copyright>© 2022 Deutschkihun. All rights reserved.</Copyright>
+        <Copyright>
+          <FormattedMessage id="Copyright" />
+        </Copyright>
       </FooterContainer>
     </Footer>
   );
