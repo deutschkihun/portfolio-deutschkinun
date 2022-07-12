@@ -7,7 +7,6 @@ export const HeaderComponent = styled.header`
   left: 0;
   width: 100%;
   z-index: 900;
-  background-color: #151516;
   padding: 16px 0;
 `;
 

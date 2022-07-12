@@ -4,7 +4,7 @@ export const Footer = styled.footer`
   position: relative;
   padding: 40px 0;
   overflow: hidden;
-  background: #151516;
+  background-color: rgba(17, 16, 34, 0.911);
 `;
 
 export const FooterItem = styled.div`

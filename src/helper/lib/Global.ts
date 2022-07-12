@@ -87,7 +87,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
   body {
-    background-color: #151516;
+    background-color: rgba(17, 16, 34, 0.911);
     color: #fff;
     font-family: "Montserrat", sans-serif;
     line-height: 1.75;

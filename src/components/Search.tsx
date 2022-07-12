@@ -31,14 +31,30 @@ export const Search = ({ active }: SearchProps) => {
               <SearchScope src={search} alt="search" />
             </SearchForm>
             <KeywordForm>
-              {Array.from({ length: 10 }, (_, k) => (
+              {/* {Array.from({ length: 10 }, (_, k) => (
                 <span>
                   <a href="/">
                     <FormattedMessage id="SearchKeyword" /> {k + 1}
                   </a>
                 </span>
-              ))}
+              ))} */}
+              <span>
+                <a href="/about">
+                  <FormattedMessage id="About" />
+                </a>
+              </span>
+              <span>
+                <a href="/project">
+                  <FormattedMessage id="Projects" />
+                </a>
+              </span>
+              <span>
+                <a href="/">
+                  <FormattedMessage id="Contact" />
+                </a>
+              </span>
             </KeywordForm>
+            <FormattedMessage id="Warning" />
           </SearchItem>
         </SearchWrap>
         <Overlay />

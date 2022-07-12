@@ -28,7 +28,6 @@ export const SearchWrap = styled.div`
   position: absolute;
   width: 100%;
   height: 60vh;
-  margin-top: 50px;
   z-index: 10;
   background: #111;
 

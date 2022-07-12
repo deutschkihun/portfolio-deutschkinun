@@ -16,8 +16,8 @@ export const ToggleContainer = styled.div`
     left: 0;
   }
   .checkbox:checked + .label {
-    background-color: rgb(82, 81, 83);
-    border: 2px solid black;
+    background-color: black;
+    border: 2px solid white;
   }
 
   .blob {
@@ -32,7 +32,7 @@ export const ToggleContainer = styled.div`
 `;
 
 export const ToggleLabel = styled.label`
-  background-color: black;
+  background-color: rgb(82, 81, 83);
   display: flex;
   height: 40px;
   border-radius: 50px;
@@ -43,7 +43,7 @@ export const ToggleLabel = styled.label`
   padding: 0 15px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
-  border: 2px solid white;
+  border: 2px solid black;
 
   .fa-moon {
     color: rgb(250, 250, 250);
