@@ -4,6 +4,6 @@
     base = "/"
 
 [[redirects]]
-  from = "/about"
-  to = "deutschkihun.com"
+  from = "/*"
+  to = "/index.html"
   status = 200
