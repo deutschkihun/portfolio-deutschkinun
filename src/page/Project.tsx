@@ -24,11 +24,12 @@ export const Project = (): JSX.Element => {
           {lang.map(({ title, description, link, img }, i) => (
             <CardItem key={i}>
               <CardImg
-                style={{ backgroundImage: `url(${img})` }}
+                src={img}
+                // style={{ backgroundImage: `url(${img})` }}
                 onClick={() => window.location.assign(link)}
-              >
-                <img src={img} alt={title} />
-              </CardImg>
+                alt={title}
+              />
+
               <CardDesc>
                 <CardTitle>{title}</CardTitle>
                 <br />

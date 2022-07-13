@@ -17,22 +17,15 @@ export const CardItem = styled.li`
   background: white;
 `;
 
-export const CardImg = styled.figure`
-  height: 0;
-  padding-bottom: 65%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: lightgray;
+export const CardImg = styled.img`
+  padding: 1rem;
+  width: 100%;
   background-size: cover;
 
   :hover {
+    cursor: pointer;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     transform: scale(1.2);
-    z-index: 2;
-  }
-
-  img {
-    display: none;
   }
 `;
 
