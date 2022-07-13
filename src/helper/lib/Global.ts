@@ -98,6 +98,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
   }
 
+  body.light-mode {
+    background-color: #FFFAFA;
+    color: #151516;
+  }
+
   p {
     margin-bottom: 1.5rem;
   }

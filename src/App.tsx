@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { Footers } from "./components/Footers";
 import { Header } from "./components/Header";
@@ -17,7 +17,9 @@ const locale = localStorage.getItem("locale") ?? "kr";
 const messages = { en: en, kr: kr }[locale];
 
 export default function App() {
-  console.log(window.location.href);
+  useEffect(() => {
+    localStorage.getItem("mode") ?? localStorage.setItem("mode", "dark-mode");
+  }, []);
 
   return (
     <>

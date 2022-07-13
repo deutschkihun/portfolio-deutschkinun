@@ -21,7 +21,7 @@ export const Header = (): JSX.Element => {
 
   return (
     <>
-      <HeaderComponent>
+      <HeaderComponent className="color-mode">
         <HeaderContainer>
           <Sidebar />
           <HomeComponent to="/">deutschkihun</HomeComponent>
