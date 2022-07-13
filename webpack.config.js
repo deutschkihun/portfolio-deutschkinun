@@ -4,6 +4,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const LiveReloadPlugin = require("webpack-livereload-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProd = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT || 3000;
@@ -11,11 +12,23 @@ const PORT = process.env.PORT || 3000;
 module.exports = {
   mode: isProd ? "production" : "development",
   devtool: isProd ? "hidden-source-map" : "source-map",
-  entry: "./src/index.tsx",
+  entry: {
+    index: {
+      import: "./src/index.tsx",
+      dependOn: "shared",
+    },
+    another: {
+      import: "./src/another-module.tsx",
+      dependOn: "shared",
+    },
+    shared: "lodash",
+  },
   output: {
-    filename: "[name].js",
-    // [name]은 chunk의 이름을 사용한다.
+    filename: "[name].bundle.js",
     path: path.join(__dirname, "/dist"),
+  },
+  optimization: {
+    runtimeChunk: "single",
   },
   resolve: {
     modules: ["node_modules"],
@@ -37,7 +50,7 @@ module.exports = {
       },
       {
         test: /\.css?$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "style-loader"],
       },
       {
         test: /\.(webp|jpg|png|jpeg)$/,
@@ -59,6 +72,7 @@ module.exports = {
     }),
     new LiveReloadPlugin(),
     new ForkTsCheckerWebpackPlugin(),
+    new MiniCssExtractPlugin(),
   ],
   devServer: {
     static: {
