@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FormattedMessage } from "react-intl";
 import { Announcement } from "../helper/lib/Announcement";
 import { Intro, Silder, SilderContainer } from "../helper/lib/Component";
@@ -6,8 +6,13 @@ import data from "../assets/data.svg";
 import language from "../assets/language.svg";
 import coding from "../assets/coding.svg";
 import learning from "../assets/learning.svg";
+import { reveal } from "../helper/Scroll";
 
 export const Home = (): JSX.Element => {
+  useEffect(() => {
+    window.addEventListener("scroll", reveal);
+  });
+
   return (
     <>
       <Intro>
@@ -41,7 +46,7 @@ export const Home = (): JSX.Element => {
         <h2>
           <FormattedMessage id="HomeQuestion3" />
         </h2>
-        <SilderContainer>
+        <SilderContainer className="reveal-container fade-bottom">
           <Silder>
             <img src={coding} alt="img" />
             <h2>
@@ -50,7 +55,7 @@ export const Home = (): JSX.Element => {
           </Silder>
         </SilderContainer>
 
-        <SilderContainer>
+        <SilderContainer className="reveal-container fade-bottom">
           <Silder>
             <img src={language} alt="img" />
             <h2>
@@ -59,7 +64,7 @@ export const Home = (): JSX.Element => {
           </Silder>
         </SilderContainer>
 
-        <SilderContainer>
+        <SilderContainer className="reveal-container fade-bottom">
           <Silder>
             <img src={data} alt="img" />
             <h2>
@@ -68,7 +73,7 @@ export const Home = (): JSX.Element => {
           </Silder>
         </SilderContainer>
 
-        <SilderContainer>
+        <SilderContainer className="reveal-container fade-bottom">
           <Silder>
             <img src={learning} alt="img" />
             <h2>

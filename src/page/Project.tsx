@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   CardContainer,
   CardList,
@@ -12,6 +12,13 @@ import { FormattedMessage } from "react-intl";
 import { ProjectENList, ProjectKRList } from "../assets/thumbnail/list";
 
 export const Project = (): JSX.Element => {
+  useEffect(() => {
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      reveals[i].classList.add("active");
+    }
+  }, []);
+
   const lang =
     localStorage.getItem("locale") === "kr" ? ProjectKRList : ProjectENList;
   return (
@@ -19,13 +26,12 @@ export const Project = (): JSX.Element => {
       <FormTitle>
         <FormattedMessage id="ProjectTitle" />
       </FormTitle>
-      <CardContainer>
+      <CardContainer className="reveal fade-bottom">
         <CardList>
           {lang.map(({ title, description, link, img }, i) => (
             <CardItem key={i}>
               <CardImg
                 src={img}
-                // style={{ backgroundImage: `url(${img})` }}
                 onClick={() => window.location.assign(link)}
                 alt={title}
               />

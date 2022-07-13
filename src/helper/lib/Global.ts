@@ -116,4 +116,22 @@ export const GlobalStyle = createGlobalStyle`
     color: #fff;
     cursor: pointer;
   }
+
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1.5s ease-in; 
+  }
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 `;

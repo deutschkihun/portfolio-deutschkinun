@@ -1,5 +1,5 @@
 import styled, { ThemeProps } from "styled-components";
-import { Theme } from "../theme";
+import { Theme } from "./theme";
 
 export const LoadingViewTitle = styled.h1<ThemeProps<Theme>>`
   font-family: ${(p): string => p.theme.fontFamily};

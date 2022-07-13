@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
 import { LoadingViewBody, LoadingViewTitle } from "../helper/lib/Loading";
-import { Theme } from "../helper/theme";
-import { Metrics } from "../helper/Metrics";
+import { Theme } from "../helper/lib/theme";
+import { Metrics } from "../helper/lib/Metrics";
 
 const StyledLoadingView = styled.div`
   display: flex;
