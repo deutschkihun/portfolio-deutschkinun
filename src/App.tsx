@@ -19,6 +19,8 @@ const messages = { en: en, kr: kr }[locale];
 export default function App() {
   useEffect(() => {
     localStorage.getItem("mode") ?? localStorage.setItem("mode", "dark-mode");
+    const colorMode = localStorage.getItem("mode") ?? "dark-mode";
+    window.document.body.classList.add(colorMode);
   }, []);
 
   return (

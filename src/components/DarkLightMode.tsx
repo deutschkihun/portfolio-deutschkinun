@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ToggleContainer, ToggleLabel } from "../helper/lib/Toggle";
 
 export const DarkLightMode = () => {
+  const currentMode = window.localStorage.getItem("mode");
+  const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    currentMode === "dark-mode" ? setToggle(false) : setToggle(true);
+  }, [toggle]);
+
   const onClickModeHandler = () => {
-    const currentMode = window.localStorage.getItem("mode");
+    setToggle(!toggle);
     const colorMode = currentMode === "dark-mode" ? "light-mode" : "dark-mode";
     if (colorMode) {
       window.document.body.classList.remove(currentMode as string);
@@ -14,7 +20,12 @@ export const DarkLightMode = () => {
 
   return (
     <ToggleContainer className="menu">
-      <input type="checkbox" className="checkbox" id="night-mode" />
+      <input
+        type="checkbox"
+        className="checkbox"
+        id="night-mode"
+        checked={toggle}
+      />
       <ToggleLabel
         htmlFor="night-mode"
         className="label"

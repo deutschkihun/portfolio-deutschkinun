@@ -31,7 +31,7 @@ export const ToggleContainer = styled.div`
 `;
 
 export const ToggleLabel = styled.label`
-  background-color: rgb(82, 81, 83);
+  background-color: #6f7378;
   display: flex;
   height: 40px;
   border-radius: 50px;
