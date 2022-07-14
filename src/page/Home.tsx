@@ -7,19 +7,28 @@ import language from "../assets/language.svg";
 import coding from "../assets/coding.svg";
 import learning from "../assets/learning.svg";
 import { reveal } from "../helper/Scroll";
+import { Splash } from "./Splash";
 
 export const Home = (): JSX.Element => {
+  useEffect(() => {
+    const splash = document.querySelector(".splash");
+    setTimeout(() => {
+      splash?.classList.add("display-none");
+    }, 2000);
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", reveal);
   });
 
   return (
     <>
+      <Splash />
       <Intro>
         <h2>
           <FormattedMessage id="HomeTitle" />
         </h2>
-        <h1>
+        <h1 className="animate-char">
           <FormattedMessage id="HomeName" />
         </h1>
       </Intro>

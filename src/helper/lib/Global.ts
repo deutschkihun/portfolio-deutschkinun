@@ -139,4 +139,68 @@ export const GlobalStyle = createGlobalStyle`
       opacity: 1;
     }
   }
+
+  .animate-char {
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: textclip 3s linear infinite;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .splash {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background: #151516;
+    z-index:1000;
+    color: white;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+  }
+
+  .splash.display-none {
+    opacity: 0;
+    z-index: -10;
+    transition: all 1.5s;
+  }
+
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 100px;
+  }
+
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+  }
+
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
 `;
