@@ -22,83 +22,120 @@ export const About = (): JSX.Element => {
           <FormattedMessage id="AboutTitle" />
         </FormTitle>
         <ul>
-          {lang.map(({ role, company, timerange, location }, i) => (
-            <Tables striped bordered hover key={i}>
-              <thead>
-                <tr>
-                  <th className="col-table">#</th>
-                  <th>
-                    <FormattedMessage id="AboutExplanation" />
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="col-table">
-                    <FormattedMessage id="AboutCompany-col" />
-                  </td>
-                  <td>{company}</td>
-                </tr>
-                <tr>
-                  <td className="col-table">
-                    <FormattedMessage id="AboutDuration-col" />
-                  </td>
-                  <td>{timerange}</td>
-                </tr>
-                <tr>
-                  <td className="col-table">
-                    <FormattedMessage id="AboutLocation-col" />
-                  </td>
-                  <td>{location}</td>
-                </tr>
-                <tr>
-                  <td className="col-table">
-                    <FormattedMessage id="AboutRole-col" />
-                  </td>
-                  <td>{role}</td>
-                </tr>
-                <tr>
-                  <td className="col-table">
-                    <FormattedMessage id="AboutJD-col" defaultMessage="" />
-                  </td>
-                  <td>
-                    <ul className="info-list">
-                      <li className="info-list-item">
-                        <FormattedMessage
-                          id={`JD-col${i + 1}-1`}
-                          defaultMessage=""
-                        />
-                      </li>
-                      <li className="sub-info-list-item">
-                        <FormattedMessage
-                          id={`JD-col${i + 1}-2-1`}
-                          defaultMessage=""
-                        />
-                      </li>
-                      <li className="sub-info-list-item">
-                        <FormattedMessage
-                          id={`JD-col${i + 1}-2-2`}
-                          defaultMessage=""
-                        />
-                      </li>
-                      <li className="sub-info-list-item">
-                        <FormattedMessage
-                          id={`JD-col${i + 1}-2-3`}
-                          defaultMessage=""
-                        />
-                      </li>
-                      <li className="sub-info-list-item">
-                        <FormattedMessage
-                          id={`JD-col${i + 1}-2-4`}
-                          defaultMessage=""
-                        />
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </Tables>
-          ))}
+          {lang.map(
+            ({ role, company, timerange, location, description }, i) => (
+              <Tables striped bordered hover key={i}>
+                <thead>
+                  <tr>
+                    <th className="col-table">#</th>
+                    <th>
+                      <FormattedMessage id="AboutExplanation-col" />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="col-table">
+                      <FormattedMessage id="AboutCompany-col" />
+                    </td>
+                    <td>{company}</td>
+                  </tr>
+                  <tr>
+                    <td className="col-table">
+                      <FormattedMessage id="AboutDescription-col" />
+                    </td>
+                    <td>{description}</td>
+                  </tr>
+                  <tr>
+                    <td className="col-table">
+                      <FormattedMessage id="AboutDuration-col" />
+                    </td>
+                    <td>{timerange}</td>
+                  </tr>
+                  <tr>
+                    <td className="col-table">
+                      <FormattedMessage id="AboutLocation-col" />
+                    </td>
+                    <td>{location}</td>
+                  </tr>
+                  <tr>
+                    <td className="col-table">
+                      <FormattedMessage id="AboutRole-col" />
+                    </td>
+                    <td>{role}</td>
+                  </tr>
+                  <tr>
+                    <td className="col-table">
+                      <FormattedMessage id="AboutJD-col" defaultMessage="" />
+                    </td>
+                    <td>
+                      <ul className="info-list">
+                        <li className="info-list-item">
+                          <FormattedMessage
+                            id={`JD-col${i + 1}-1`}
+                            defaultMessage=" "
+                          />
+                        </li>
+                        <li className="sub-info-list-item">
+                          <FormattedMessage
+                            id={`JD-col${i + 1}-2-1`}
+                            defaultMessage=" "
+                          />
+                        </li>
+                        <li className="sub-info-list-item">
+                          <FormattedMessage
+                            id={`JD-col${i + 1}-2-2`}
+                            defaultMessage=" "
+                          />
+                        </li>
+                        <li className="sub-info-list-item">
+                          <FormattedMessage
+                            id={`JD-col${i + 1}-2-3`}
+                            defaultMessage=" "
+                          />
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="col-table">
+                      <FormattedMessage
+                        id="AboutAccomplishment-col"
+                        defaultMessage=""
+                      />
+                    </td>
+                    <td>
+                      <ul className="info-list">
+                        <li className="info-list-item">
+                          <FormattedMessage
+                            id={`Accomplishment-col${i + 1}-1`}
+                            defaultMessage=" "
+                          />
+                        </li>
+                      </ul>
+                      <ul className="info-list">
+                        <li className="info-list-item">
+                          <FormattedMessage
+                            id={`Accomplishment-col${i + 1}-2`}
+                            defaultMessage=" "
+                          />
+                        </li>
+                      </ul>
+                      <ul className="info-list">
+                        <li className="info-list-item">
+                          <FormattedMessage
+                            id={`Accomplishment-col${i + 1}-3`}
+                            defaultMessage=" "
+                          />
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </Tables>
+            )
+          )}
         </ul>
       </FormContainer>
       <FormTitle>

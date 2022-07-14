@@ -12,15 +12,17 @@
 
     "Warning": "⋇ 검색 기능은 현재 개발이 진행 중 입니다. 이용에 불편을 드려서 죄송합니다.",
 
-
     "HomeTitle": "안녕하세요 저는",
     "HomeName": "김기훈 입니다.",
-    "HomeQuestion1": "나는 누구인가요 ?",
-    "HomeAnswer1":"저는 단순히 코드를 작성하는 것뿐만 아니라 개발자로써 비즈니스 문제에 대한 가장 합리적인 해결책을 찾기 위해 노력하고 있습니다. 저는 데이터에 대해 깊게 고민하고, 어떠한 방식으로 시각화 할지를 생각합니다. 현재 독일 PACE Telematics 에서 주니어 프론트엔드 개발로 일하고 있습니다.",
-    "HomeQuestion2":"무엇이 나를 개발자로써 더욱 특별하게 만드나요 ?",
-    "HomeAnswer2":"저는 현실에 안주하지 않고 새로운 기술을 습득하려고 꾸준히 노력합니다. 또한 해외에서 국적이 다양한 많은 외국인들과 같이 일하면서 생각이 다른 사람들과 어떠한 방식으로 의사소통 해야 할지를 스스로 터득했습니다.", 
-    "HomeQuestion3": "핵심 기술",
-    "HomeAnswer3-1": "전문 프론트엔드 실무 경험",
+    "HomeQuestion0": "나는 누구인가요 ?",
+    "HomeAnswer0":"저는 개발자로써 단순히 코드만을 작성하는 것뿐만 아니라 비즈니스 문제에 대한 가장 합리적이고 근본적인 해결책을 찾기 위해 노력하고 있습니다. 저는 데이터에 대해 생각하고 어떠한 효율적인 방식으로 시각화 할 수 있을지 고민합니다. 지난 22년 5월까지 독일의 모빌리티 스타트업 PACE Telematics 에서 프론트앤드 개발자로 일했었습니다. 현재는 한국에서 저의 커리어를 이어 가고자 이직을 준비하고 있습니다.",
+    "HomeQuestion1": "나의 가치관",
+    "HomeAnswer1": "현실에 안주 하지 않고 끊임없이 새로운 기술, 문화을 배우고 받아드리려 노력하고 있습니다. 또한 나의 의견, 생각을 적극적으로 표현하되 함께 일하는 동료들과 투명한 의사소통을 하고, 그들의 피드백을 적극적으로 수용하려 노력하고 있습니다.",
+    "HomeQuestion2": "나의 커리어 목표",
+    "HomeAnswer2": "궁극적인 커리어 목표는 나를 위해서 일할 수 있는 개자이너 (개발자 + 디자이너) 되기.",
+    
+    "HomeQuestion3": "핵심 역량",
+    "HomeAnswer3-1": "프론트엔드 실무 경험",
     "HomeAnswer3-2": "비즈니스 수준의 영어,독어 의사소통 경험",
     "HomeAnswer3-3": "2차원,3차원 시각화 (d3.js,three.js)",
     "HomeAnswer3-4": "익숙하지 않은 라이브러리,패키지에 대한 빠른 러닝 커브",
@@ -29,15 +31,17 @@
 
     "AboutTitle": "전문적인 실무 경험",
     "AboutCompany-col":"회사명",
+    "AboutDescription-col":"회사소개",
     "AboutDuration-col":"기간",
     "AboutLocation-col":"위치",
     "AboutRole-col":"직책",
     "AboutStack-col":"기술 스택",
     "AboutJD-col":"주요 업무 사항",
-    "AboutExplanation":"설명",
+    "AboutExplanation-col":"설명",
+    "AboutAccomplishment-col":"성과",
 
 
- 
+
     "CompetenceTitle": "기술 스택",
     "LanguageTitle": "언어",
     "ProjectTitle": "프로젝트 리스트",
@@ -50,15 +54,22 @@
     "Message": "메시지",
 
     "JD-col1-1":"PACE Drive Application 의 progressive web app (PWA) monorepo 개발",
-    "JD-col1-2-1":"모바일 앱 기반 실시간 주유 서비스 fueling-app",
-    "JD-col1-2-2":"모바일 앱 기반 유류비 결제 서비스 payment-app", 
-    "JD-col1-2-3":"주유 사업자를 위한 커스텀 플랫폼 서비스 partner-management-app", 
-    "JD-col1-2-4":"MapBox API 기반 주변 주유소 위치 및 실시간 운영 정보 서비스 fuel-station-finder-app", 
+    "JD-col1-2-1":"모바일 앱 기반 실시간 주유 서비스 fueling-app / 유류비 결제 서비스 payment-app 개발",
+    "JD-col1-2-2":"주유 사업자를 위한 커스텀 플랫폼 서비스 partner-management-app 개발", 
+    "JD-col1-2-3":"MapBox API 기반 주유소 위치 및 실시간 운영정보 제공 서비스 fuel-station-finder-app 개발", 
 
-    "JD-col2-1":"Low-code 시스템에 들어가는 frontend 및 GUI 개발",
-    "JD-col2-2-1":"Low-code (코딩이 필요한 영역에서 코드를 치지 않고도 무언가를 만들 수 있도록 도와주는 서비스)", 
-    "JD-col2-2-2":"반응형 웹 기반 커스텀 플랫폼을 위한 front-end 기반의 디자인 및 인터페이스 GUI 기능 추가",
-    "JD-col2-2-3":"시스템 데이터 Workflow dashboard 개발",
-    "JD-col2-2-4":"자바스크립트 레거시 코드를 정적타입 언어로 수정" 
+    "JD-col2-1":"Low-code frontend 파트 개발",
+    "JD-col2-2-1":"반응형 웹 컴포넌트 개발",
+    "JD-col2-2-2":"Graphic User Interface (GUI) 개발",
+    "JD-col2-2-3":"Workflow dashboard 개발",
+
+
+    "Accomplishment-col1-1":"monorepo의 event-logging 구축을 통한 사용자들의 conversion rate (전환율) 파악 및 서비스 개선 방향성 제공",
+    "Accomplishment-col1-2":"A/B Test 을 통한 다양한 User interface 테스트와 실험 결과를 바탕으로 사용자 의견 기반의 User interface 개선",
+    "Accomplishment-col1-3":"Unit test 및 자동화 snapshot test pipeline 구축",
+
+    "Accomplishment-col2-1":"자바스크립트 코드를 정적타입 (타입스크립트) 언어로 전환",
+    "Accomplishment-col2-2":"jQuery 와 같은 레거시 코드를 최신 스택으로 전환",
+    "Accomplishment-col2-3":"GUI 와 Workflow dashboard 관련 시스템 버그 최소화"
 }
 

@@ -60,7 +60,7 @@ export const StackList = [
     img: css,
   },
   {
-    name: "sc",
+    name: "styled-components",
     img: sc,
   },
   {

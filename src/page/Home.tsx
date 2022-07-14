@@ -34,24 +34,16 @@ export const Home = (): JSX.Element => {
           <FormattedMessage id="HomeName" />
         </h1>
       </Intro>
-
-      <Intro>
-        <h2>
-          <FormattedMessage id="HomeQuestion1" />
-        </h2>
-        <p>
-          <FormattedMessage id="HomeAnswer1" />
-        </p>
-      </Intro>
-
-      <Intro>
-        <h2>
-          <FormattedMessage id="HomeQuestion2" />
-        </h2>
-        <p>
-          <FormattedMessage id="HomeAnswer2" />
-        </p>
-      </Intro>
+      {Array.from({ length: 3 }, (_, k) => (
+        <Intro>
+          <h2>
+            <FormattedMessage id={`HomeQuestion${k}`} />
+          </h2>
+          <p>
+            <FormattedMessage id={`HomeAnswer${k}`} />
+          </p>
+        </Intro>
+      ))}
 
       <Intro>
         <h2>

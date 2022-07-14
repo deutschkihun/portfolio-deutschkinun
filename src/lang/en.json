@@ -15,11 +15,14 @@
 
     "HomeTitle": "Hi, I'm",
     "HomeName": "Kihun Kim",
-    "HomeQuestion1": "Who am I ?",
-    "HomeAnswer1":"I am not just only writing a code, but also tries to find the best reasonable solution for business problems. I think about data, visualize them in many different ways. Currently junior software engineer, doing frontend development at PACE Telematics in Germany.",
-    "HomeQuestion2":"What makes me unique as developer ?",
-    "HomeAnswer2":"I try to acquire new skills without settling current life or choosing second best. I also learned how to communicate with people who have different ideas by working with many foreigners with different nationalities.",
-    "HomeQuestion3": "Key skills",
+    "HomeQuestion0": "Who am I ?",
+    "HomeAnswer0":"As a developer, I am not just writing a code, but also tries to find the reasonable and fundamental solution for business problems. I think about data and consider how to visualize it efficiently. Until May, 2022, I worked as a front-end developer for German mobility startup PACE Telematics. Currently, I am preparing to change jobs to continue my career in Korea.",
+   "HomeQuestion1": "My values",
+    "HomeAnswer1":"Do not settle on current situation. Trying to learn new technology, culture. Furthermore, I am also actively expressing my opinions and thoughts, but I am trying to communicate transparently with my colleagues and actively accept their feedback.",
+    "HomeQuestion2":"My career goals",
+    "HomeAnswer2":"To become a developer + designer who works for myself independently.",
+    
+    "HomeQuestion3": "Key competences",
     "HomeAnswer3-1": "Professional frontend field experience",
     "HomeAnswer3-2": "Business level english / german experience",
     "HomeAnswer3-3": "WebGL & data visualization (d3.js, three.js)",
@@ -29,12 +32,14 @@
 
     "AboutTitle": "Professional field experiences",
     "AboutCompany-col":"Company",
+    "AboutDescription-col":"Description",
     "AboutDuration-col":"Duration",
     "AboutLocation-col":"Location",
     "AboutRole-col":"Role",
     "AboutStack-col":"Teck Stack",
     "AboutJD-col":"Job Description",
-    "AboutExplanation":"Explanation",
+    "AboutExplanation-col":"Explanation",
+    "AboutAccomplishment-col":"Accomplishment",
 
     "CompetenceTitle": "Tech stack",
     "LanguageTitle": "Languages",
@@ -48,14 +53,23 @@
     "Message": "Message",
 
     "JD-col1-1":"Development of  progressive web app (PWA) monorepo in PACE Drive Application",
-    "JD-col1-2-1":"Mobile app based real time fueling service (fueling-app)",
-    "JD-col1-2-2":"Mobile app based fuel-price remote payment service (payment-app)", 
-    "JD-col1-2-3":"Custom fueling platfom for oil company (partner-management-app)", 
-    "JD-col1-2-4":"MapBox API based providing gas-station location and opening hours (fuel-station-finder-app)", 
+    "JD-col1-2-1":"Mobile app based real time fueling service (fueling-app) / fuel-price payments service (payment-app) development ",
+    "JD-col1-2-2":"Custom fueling platfom for oil company (partner-management-app) development", 
+    "JD-col1-2-3":"MapBox API based providing gas-station location and opening hours (fuel-station-finder-app) development", 
     
-    "JD-col2-1":"Frontend GUI development for Low-code system",
-    "JD-col2-2-1":"Low-code (a service that helps non-developer create software in areas where they need to write a code)", 
-    "JD-col2-2-2":"Front-end-based design and interface GUI functionality for responsive web-based custom platforms",
+    "JD-col2-1":"Frontend development for Low-code system",
+    "JD-col2-2-1":"Responsive web component development",
+    "JD-col2-2-2":"Graphic User Interface (GUI) development",
     "JD-col2-2-3":"Workflow dashboard development",
-    "JD-col2-2-4":"Modifying javaScript legacy code to static type language" 
+
+    "Accomplishment-col1-1":"Identifying the conversion rate of users by building event-logging on the services contained in monorepo and providing direction for service improvement",
+    "Accomplishment-col1-2":"User interface improvement based on user interface experimental results by A/B test",
+    "Accomplishment-col1-3":"Building unit test and automatic snapshot test pipeline",
+
+    "Accomplishment-col2-1":"Modifying javaScript code to static type language (typescript)",
+    "Accomplishment-col2-2":"Converting legacy code such as jQuery to the latest stack",
+    "Accomplishment-col2-3":"Minimizing system bugs related to GUI and Workflow Dashboard" 
+
+
+
 }
