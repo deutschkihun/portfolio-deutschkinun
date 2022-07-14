@@ -29,7 +29,7 @@ export const SearchWrap = styled.div`
   width: 100%;
   height: 60vh;
   z-index: 10;
-  background: #111;
+  background-color: #6f7378;
 
   @media screen and (max-width: 500px) {
     height: 70vh;
@@ -41,7 +41,7 @@ export const SearchItem = styled.div`
   max-width: 1280px;
   padding: 20px 40px;
   margin: 150px auto;
-  border: 1px solid grey;
+  border: 1px solid;
 `;
 
 export const SearchForm = styled.form`

@@ -14,6 +14,7 @@ import { ExperienceKR, ExperienceEN } from "../assets/experience/list";
 export const About = (): JSX.Element => {
   const lang =
     localStorage.getItem("locale") === "kr" ? ExperienceKR : ExperienceEN;
+
   return (
     <>
       <FormContainer>

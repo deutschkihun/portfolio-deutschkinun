@@ -4,7 +4,7 @@ export const Footer = styled.footer`
   position: relative;
   padding: 40px 0;
   overflow: hidden;
-  background-color: rgba(17, 16, 34, 0.911);
+  border-top: 1px solid grey;
 `;
 
 export const FooterItem = styled.div`
@@ -37,7 +37,7 @@ export const FooterCategory = styled.div`
     font-size: 14px;
     margin-bottom: 20px;
     opacity: 0.7;
-    color: #fff;
+    /* color: #fff; */
 
     @media screen and (max-width: 555px) {
       font-size: 40px;
@@ -47,7 +47,7 @@ export const FooterCategory = styled.div`
 
   a {
     display: block;
-    color: #fff;
+    /* color: #fff; */
     font-size: 15px;
     margin-bottom: 10px;
   }

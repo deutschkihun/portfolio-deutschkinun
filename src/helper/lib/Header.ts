@@ -19,7 +19,6 @@ export const HeaderContainer = styled.div`
   grid-auto-rows: minmax(10px, auto);
   grid-gap: 10px;
   place-items: center center;
-  color: white;
 
   .fa-bars {
     display: none;

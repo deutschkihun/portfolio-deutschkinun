@@ -1,11 +1,15 @@
 import React from "react";
 import { splashEN, splashKR } from "../assets/splash/list";
 
-export const Splash = () => {
+interface SplashProps {
+  mode: string;
+}
+
+export const Splash = ({ mode }: SplashProps) => {
   const locale = localStorage.getItem("locale") === "kr" ? splashKR : splashEN;
 
   return (
-    <div className="splash">
+    <div className={`splash ${mode}`}>
       <div className="waviy">
         {locale.split("").map((m, k) => (
           <span key={k} style={{ "--i": k + 1 }}>

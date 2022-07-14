@@ -7,25 +7,13 @@ export const FormTitle = styled.h2`
 `;
 
 export const FormContainer = styled.form`
-  background: #313336;
   border-radius: 0.25rem;
-  box-shadow: 9px 12px 25px -5px rgb(255 255 255 / 15%),
-    11px 13px 10px -5px rgb(255 255 255 / 10%);
+  border: 1px solid;
   padding: 2rem 2.5rem;
   min-width: 350px;
   max-width: 70vw;
-  width: 100%;
   margin: 50px auto;
 
-  img {
-    width: 100%;
-    height: 50%;
-  }
-
-  h3 {
-    text-align: center;
-    font-size: 20px;
-  }
   p {
     text-align: justify;
   }
@@ -53,46 +41,41 @@ export const FormItem = styled.div`
 `;
 
 export const Input = styled.input`
-  font-size: 24px;
   height: 48px;
+  padding: 0.375rem 0.75rem;
   border-radius: 12px;
-  padding-left: 24px;
-  margin-bottom: 1rem;
-  border: 1px solid #fff;
-  background-color: #313336;
+  margin: 0.5rem auto;
   width: 100%;
-  color: #c5cad5;
 `;
 
 export const TextArea = styled.textarea`
   width: 100%;
   padding: 0.375rem 0.75rem;
   border-radius: 12px;
-  padding-left: 24px;
-  background-color: #313336;
-  border: 1px solid #fff;
   height: 30vh;
-  color: #fff;
 `;
 
 export const SilderContainer = styled.div`
   padding: 1rem;
-  border: 0.2rem solid #ececec;
+  border: 0.2rem solid;
   width: 70vw;
   margin: auto;
   border-radius: 8px;
-  color: #212529;
   margin-bottom: 3rem;
 `;
 
 export const Silder = styled.div`
   padding: 1rem;
-  border: 0.2rem solid #ececec;
+  border: 0.2rem solid;
   border-radius: 8px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 420px;
   justify-items: center;
+
+  svg {
+    fill: black;
+  }
 
   img {
     width: 200px;
@@ -101,8 +84,6 @@ export const Silder = styled.div`
 
   h2 {
     margin: auto;
-    color: #fff;
-    text-align: center;
   }
 
   @media screen and (max-width: 1024px) {
@@ -164,13 +145,19 @@ export const Intro = styled.div`
 export const Tables = styled(Table)`
   min-width: 300px;
   max-width: 70vw;
+  border: 2px solid;
 
   .col-table {
     flex-shrink: 0;
     width: 170px;
   }
 
+  th {
+    border: 2px solid !important;
+  }
+
   td {
+    border: 2px solid;
     text-align: center;
     line-height: 2.5rem;
 

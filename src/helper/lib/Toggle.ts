@@ -17,7 +17,6 @@ export const ToggleContainer = styled.div`
   }
   .checkbox:checked + .label {
     background-color: black;
-    border: 2px solid white;
   }
 
   .blob {

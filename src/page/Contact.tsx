@@ -13,19 +13,18 @@ export const Contact = (): JSX.Element => {
 
   return (
     <>
+      <FormTitle>
+        <FormattedMessage id="ContactTitle" />
+      </FormTitle>
       <FormContainer
         target="_blank"
         action="https://formsubmit.co/deutschkihun@gmail.com"
         method="POST"
         className="main-box"
       >
-        <FormTitle>
-          <FormattedMessage id="ContactTitle" />
-        </FormTitle>
-        <Input
-          type="email"
-          name="email"
-          placeholder={intl.formatMessage({ id: "Email" })}
+        <TextArea
+          name="message"
+          placeholder={intl.formatMessage({ id: "Message" })}
           required={true}
         />
         <Input
@@ -34,12 +33,16 @@ export const Contact = (): JSX.Element => {
           placeholder={intl.formatMessage({ id: "Name" })}
           required={true}
         />
-        <TextArea
-          name="message"
-          placeholder={intl.formatMessage({ id: "Message" })}
+        <Input
+          type="email"
+          name="email"
+          placeholder={intl.formatMessage({ id: "Email" })}
           required={true}
         />
-        <Button type="submit">
+        <Button
+          type="submit"
+          style={{ borderRadius: "12px", margin: "0.5rem auto" }}
+        >
           <FormattedMessage id="Submit" />
         </Button>
       </FormContainer>

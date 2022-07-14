@@ -13,8 +13,6 @@ import sc from "./sc.svg";
 import git from "./git.svg";
 import github from "./github.svg";
 import docker from "./docker.svg";
-import heroku from "./heroku.svg";
-import netlify from "./netlify.svg";
 
 export const StackList = [
   {
@@ -76,13 +74,5 @@ export const StackList = [
   {
     name: "docker",
     img: docker,
-  },
-  {
-    name: "netlify",
-    img: netlify,
-  },
-  {
-    name: "heroku",
-    img: heroku,
   },
 ];

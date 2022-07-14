@@ -88,7 +88,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: rgba(17, 16, 34, 0.911);
-    color: #fff;
+    color: #FFFAFA;
     font-family: "Montserrat", sans-serif;
     line-height: 1.75;
     width: 100%;
@@ -100,7 +100,9 @@ export const GlobalStyle = createGlobalStyle`
 
   body.light-mode {
     background-color: #FFFAFA;
-    color: #151516;
+    color: rgba(17, 16, 34, 0.911);
+
+
   }
 
   p {
@@ -112,13 +114,12 @@ export const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
   a {
-    color: #fff;
+    color: inherit;
     text-decoration: none;
   }
 
   a:hover {
-    text-decoration: none;
-    color: #fff;
+    color: inherit;
     cursor: pointer;
   }
 
@@ -167,13 +168,18 @@ export const GlobalStyle = createGlobalStyle`
     left:0;
     width: 100%;
     height: 100vh;
-    background: #151516;
-    z-index:1000;
-    color: white;
-    text-align: center;
+    background-color: black;
+    color: #FFFAFA;
+    opacity: 1;
+    z-index:999;
     justify-content:center;
     align-items: center;
     display: flex;
+  }
+
+  .splash.light-mode {
+    color: black;
+    background-color: #FFFAFA;
   }
 
   .splash.display-none {

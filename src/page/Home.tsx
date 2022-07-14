@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { Announcement } from "../helper/lib/Announcement";
 import { Intro, Silder, SilderContainer } from "../helper/lib/Component";
@@ -10,11 +10,13 @@ import { reveal } from "../helper/Scroll";
 import { Splash } from "./Splash";
 
 export const Home = (): JSX.Element => {
+  const [mode, setMode] = useState("dark-mode");
   useEffect(() => {
     const splash = document.querySelector(".splash");
     setTimeout(() => {
       splash?.classList.add("display-none");
     }, 2000);
+    setMode(localStorage.getItem("mode") ?? "dark-mode");
   }, []);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ export const Home = (): JSX.Element => {
 
   return (
     <>
-      <Splash />
+      <Splash mode={mode} />
       <Intro>
         <h2>
           <FormattedMessage id="HomeTitle" />
