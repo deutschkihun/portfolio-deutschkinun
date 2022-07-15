@@ -10,10 +10,6 @@ export const LanguagesContainer = styled.form`
     margin: 2px;
   }
 
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
-
   button {
     margin: 0 1rem;
     background: #0d6efd;

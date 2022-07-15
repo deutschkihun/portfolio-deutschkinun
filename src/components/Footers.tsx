@@ -84,9 +84,9 @@ export const Footers = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/deutschkihun/webgl-animation"
+              href="https://github.com/deutschkihun/portfolio"
             >
-              portfolio-deutschkihun
+              @deutschkihun/portfolio
             </a>
           </FooterCategory>
           <FooterCategory>

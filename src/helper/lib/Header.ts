@@ -34,6 +34,7 @@ export const HeaderContainer = styled.div`
   @media screen and (max-width: 1024px) {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     .fa-bars {
       padding-left: 1rem;
       font-size: 20px;
