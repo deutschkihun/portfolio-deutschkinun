@@ -69,6 +69,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html"),
       hash: true,
+      favicon: "public/favicon.ico",
     }),
     new LiveReloadPlugin(),
     new ForkTsCheckerWebpackPlugin(),

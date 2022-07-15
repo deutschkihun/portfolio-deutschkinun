@@ -15,7 +15,7 @@ export const Home = (): JSX.Element => {
     const splash = document.querySelector(".splash");
     setTimeout(() => {
       splash?.classList.add("display-none");
-    }, 2000);
+    }, 2500);
     setMode(localStorage.getItem("mode") ?? "dark-mode");
   }, []);
 
