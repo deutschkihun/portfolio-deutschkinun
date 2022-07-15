@@ -7,9 +7,6 @@ export const FormTitle = styled.h2`
 `;
 
 export const FormContainer = styled.form`
-  border-radius: 0.25rem;
-  border: 1px solid;
-  padding: 2rem 2.5rem;
   min-width: 350px;
   max-width: 70vw;
   margin: 50px auto;
@@ -22,8 +19,8 @@ export const FormContainer = styled.form`
     width: 100%;
   }
 
-  @media screen and (max-width: 1024px) {
-    max-width: 90vw;
+  @media screen and (max-width: 850px) {
+    max-width: 100vw;
     min-width: 0px;
   }
 `;
@@ -153,14 +150,9 @@ export const Tables = styled(Table)`
   border: 2px solid;
   @media screen and (max-width: 1024px) {
     min-width: 0px;
-    max-width: 100vw;
+    max-width: 96vw;
     padding: 0.5rem;
     margin: 1rem auto;
-  }
-
-  .col-table {
-    flex-shrink: 0;
-    width: 170px;
   }
 
   th {

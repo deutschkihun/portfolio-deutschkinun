@@ -27,7 +27,6 @@ export const About = (): JSX.Element => {
               <Tables striped bordered hover key={i}>
                 <thead>
                   <tr>
-                    <th className="col-table">#</th>
                     <th>
                       <FormattedMessage id="AboutExplanation-col" />
                     </th>
@@ -35,37 +34,37 @@ export const About = (): JSX.Element => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="col-table">
+                    <td>
                       <FormattedMessage id="AboutCompany-col" />
                     </td>
                     <td>{company}</td>
                   </tr>
                   <tr>
-                    <td className="col-table">
+                    <td>
                       <FormattedMessage id="AboutDescription-col" />
                     </td>
                     <td>{description}</td>
                   </tr>
                   <tr>
-                    <td className="col-table">
+                    <td>
                       <FormattedMessage id="AboutDuration-col" />
                     </td>
                     <td>{timerange}</td>
                   </tr>
                   <tr>
-                    <td className="col-table">
+                    <td>
                       <FormattedMessage id="AboutLocation-col" />
                     </td>
                     <td>{location}</td>
                   </tr>
                   <tr>
-                    <td className="col-table">
+                    <td>
                       <FormattedMessage id="AboutRole-col" />
                     </td>
                     <td>{role}</td>
                   </tr>
                   <tr>
-                    <td className="col-table">
+                    <td>
                       <FormattedMessage id="AboutJD-col" defaultMessage="" />
                     </td>
                     <td>
