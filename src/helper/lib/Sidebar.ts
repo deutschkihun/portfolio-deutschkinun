@@ -23,9 +23,9 @@ export const SidebarList = styled.aside`
   top: 0;
   left: 0;
   width: 30%;
-  min-width: 100px;
+  min-width: 150px;
   height: 100%;
-  background: #313336;
+  background: #6f7378;
   display: grid;
   grid-template-rows: auto 1fr auto;
   row-gap: 1rem;

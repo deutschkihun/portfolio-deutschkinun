@@ -77,9 +77,16 @@ export const Footers = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/deutschkihun/Animation3DWorld-Webpack"
+              href="https://github.com/deutschkihun/webgl-animation"
             >
               Animation 3d world
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/deutschkihun/webgl-animation"
+            >
+              portfolio-deutschkihun
             </a>
           </FooterCategory>
           <FooterCategory>

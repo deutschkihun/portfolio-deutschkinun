@@ -33,7 +33,7 @@ export const HeaderContainer = styled.div`
 
   @media screen and (max-width: 1024px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     .fa-bars {
       padding-left: 1rem;
       font-size: 20px;
@@ -43,10 +43,8 @@ export const HeaderContainer = styled.div`
     .fa-times {
       padding-right: 1rem;
     }
-  }
 
-  .menu {
-    @media screen and (max-width: 1024px) {
+    .menu {
       display: none;
     }
   }

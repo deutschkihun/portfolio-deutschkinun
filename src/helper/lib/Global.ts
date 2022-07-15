@@ -199,6 +199,14 @@ export const GlobalStyle = createGlobalStyle`
     display: inline-block;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
+
+    @media screen and (max-width: 680px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 1.5rem;
+    }
   }
 
   @keyframes waviy {

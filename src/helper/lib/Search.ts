@@ -6,7 +6,7 @@ export const SearchContainer = styled.div`
   }
 
   .close-searchbar {
-    transform: translateY(-600px);
+    transform: translateY(-1000px);
   }
 
   #searchbar-list {

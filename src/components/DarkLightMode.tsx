@@ -19,7 +19,7 @@ export const DarkLightMode = () => {
   };
 
   return (
-    <ToggleContainer className="menu">
+    <ToggleContainer>
       <input
         type="checkbox"
         className="checkbox"
