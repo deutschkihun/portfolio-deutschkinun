@@ -9,7 +9,7 @@ export const FormTitle = styled.h2`
 export const FormContainer = styled.form`
   min-width: 350px;
   max-width: 70vw;
-  margin: 50px 10px;
+  margin: 50px auto;
 
   p {
     text-align: justify;
