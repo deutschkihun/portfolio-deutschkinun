@@ -5,6 +5,7 @@ export const Footer = styled.footer`
   padding: 40px 0;
   overflow: hidden;
   border-top: 1px solid grey;
+  z-index: -1;
 `;
 
 export const FooterItem = styled.div`
@@ -22,12 +23,11 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterCategory = styled.div`
+  display: inline-table;
   @media screen and (max-width: 555px) {
-    display: inline-grid;
     width: 100%;
   }
 
-  display: inline-block;
   padding-left: 30px;
   vertical-align: top;
   width: 25%;
@@ -37,7 +37,6 @@ export const FooterCategory = styled.div`
     font-size: 14px;
     margin-bottom: 20px;
     opacity: 0.7;
-    /* color: #fff; */
 
     @media screen and (max-width: 555px) {
       font-size: 40px;

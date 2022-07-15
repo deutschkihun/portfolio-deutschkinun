@@ -127,6 +127,7 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 1;
   }
   .active.fade-bottom {
+    z-index: -1;
     animation: fade-bottom 1.5s ease-in; 
   }
 

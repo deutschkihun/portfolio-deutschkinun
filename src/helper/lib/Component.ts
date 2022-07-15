@@ -21,6 +21,11 @@ export const FormContainer = styled.form`
   button {
     width: 100%;
   }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 90vw;
+    min-width: 0px;
+  }
 `;
 
 export const FormItem = styled.div`
@@ -146,6 +151,12 @@ export const Tables = styled(Table)`
   min-width: 300px;
   max-width: 70vw;
   border: 2px solid;
+  @media screen and (max-width: 1024px) {
+    min-width: 0px;
+    max-width: 100vw;
+    padding: 0.5rem;
+    margin: 1rem auto;
+  }
 
   .col-table {
     flex-shrink: 0;
