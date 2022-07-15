@@ -9,7 +9,7 @@ export const FormTitle = styled.h2`
 export const FormContainer = styled.form`
   min-width: 350px;
   max-width: 70vw;
-  margin: 50px auto;
+  margin: 50px 10px;
 
   p {
     text-align: justify;
@@ -20,7 +20,7 @@ export const FormContainer = styled.form`
   }
 
   @media screen and (max-width: 850px) {
-    max-width: 100vw;
+    max-width: 98vw;
     min-width: 0px;
   }
 `;

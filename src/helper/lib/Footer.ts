@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
-  position: relative;
   padding: 40px 0;
   overflow: hidden;
   border-top: 1px solid grey;
-  z-index: -1;
 `;
 
 export const FooterItem = styled.div`
@@ -15,7 +13,6 @@ export const FooterItem = styled.div`
 `;
 
 export const FooterContainer = styled.div`
-  position: relative;
   width: 100%;
   max-width: 1280px;
   padding: 0 40px;
@@ -36,7 +33,6 @@ export const FooterCategory = styled.div`
     height: 20px;
     font-size: 14px;
     margin-bottom: 20px;
-    opacity: 0.7;
 
     @media screen and (max-width: 555px) {
       font-size: 40px;
