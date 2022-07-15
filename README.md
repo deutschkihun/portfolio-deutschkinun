@@ -1,3 +1,3 @@
-# @deutschkihun/portfolio
+# @deutschkihun
 
-published url: https://deutschkihun.com
+portfolio web page url: https://deutschkihun.com
