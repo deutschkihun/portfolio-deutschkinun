@@ -1,5 +1,5 @@
 const cacheName = "site-cache-v1";
-const assetsToCache = ["/", "/index.html", "/service-worker.js"];
+const assetsToCache = ["/", "./index.html", "./service-worker.js"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
