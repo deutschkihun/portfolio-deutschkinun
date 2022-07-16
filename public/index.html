@@ -12,14 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" href="/logo512.png" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="/manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="<%=htmlWebpackPlugin.files.favicon%>" type="image/x-icon">
 
     <title>Portfolio / deutschkihun </title>
   </head>
   <body>
     <div id="root"></div>
-    <script src="./service-worker.js">
+    <script type="text/babel" src="./service-worker.js">
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
           console.log('Service worker registration succeeded:', registration);
