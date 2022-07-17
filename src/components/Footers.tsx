@@ -37,6 +37,13 @@ export const Footers = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
+              href="https://github.com/deutschkihun/portfolio"
+            >
+              @deutschkihun/portfolio
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://luxeschmuck.herokuapp.com/"
             >
               Luxe schmuck
@@ -63,6 +70,13 @@ export const Footers = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
+              href="https://css-font-animation.netlify.app/"
+            >
+              @deutschkihun/text-animation
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.npmjs.com/package/@deutschkihun/ultimate-boilerplate"
             >
               @deutschkihun/ultimate-boilerplate
@@ -77,16 +91,9 @@ export const Footers = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/deutschkihun/webgl-animation"
+              href="https://github.com/deutschkihun/webgl"
             >
-              Animation 3d world
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/deutschkihun/portfolio"
-            >
-              @deutschkihun/portfolio
+              @deutschkihun/webgl
             </a>
           </FooterCategory>
           <FooterCategory>
