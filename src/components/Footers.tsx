@@ -84,9 +84,9 @@ export const Footers = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.npmjs.com/package/@deutschkihun/custom-react-component-lib"
+              href="https://www.npmjs.com/package/@deutschkihun/rcl"
             >
-              @deutschkihun/custom-react-component-lib
+              @deutschkihun/rcl (react-component-library)
             </a>
             <a
               target="_blank"
